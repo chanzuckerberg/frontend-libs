@@ -1,0 +1,6 @@
+{
+  "name": "frontend-libs",
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["packages/*"]
+}

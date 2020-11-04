@@ -1,0 +1,23 @@
+# frontend-libs
+
+Monorepo of frontend, TypeScript projects for use by the [Chan Zuckerberg Initiative](https://github.com/chanzuckerberg).
+
+## Project goals
+
+The packages in this monorepo are
+- Useful between projects and initiatives at CZI
+- Useful for other companies and the open-source community
+
+Using a monorepo eases the maintenance burden by sharing configuration and tooling across the packages. Overall goals for this project are
+- Each package is independent. Unrelated packages can live in this repository.
+- Packages are built, linted, and tested at the top level (instead of individually).
+- Packages can override config as necessary.
+- Scripts are straightforward and standard, so that upgrading dependencies is as easy as possible. Limit custom processes.
+
+## Usage
+
+All packages are published separately as an NPM package, and should be installed and used as such. See each package's README.md file for installation and usage instructions.
+
+## License
+
+All code and packages in this repository are licensed under the [MIT License](https://opensource.org/licenses/MIT).
