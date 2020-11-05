@@ -24,6 +24,6 @@
     "prettier": "^2.1.2"
   },
   "resolutions": {
-    "**/jest-haste-map/fsevents": "2.1.3"
+    "jest-haste-map": "^26.6.2"
   }
 }
