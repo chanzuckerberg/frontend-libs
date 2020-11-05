@@ -6,8 +6,12 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "yarn build:js",
+    "build:js": "lerna exec --parallel -- babel --root-mode upward src --out-dir build --ignore **/*.stories.js,**/*.test.js",
+    "clean": "rimraf 'packages/*/build'",
     "lint": "eslint --ext=js,jsx,ts,tsx .",
     "lint:fix": "yarn run lint --fix",
+    "prebuild": "yarn clean",
     "test": "jest"
   },
   "devDependencies": {
@@ -21,7 +25,9 @@
     "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.6.3",
-    "prettier": "^2.1.2"
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
   },
   "resolutions": {
     "jest-haste-map": "^26.6.2"
