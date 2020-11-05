@@ -1,5 +1,5 @@
 {
   "name": "@chanzuckerberg/demo-a",
   "version": "1.0.0",
-  "main": "src/index"
+  "main": "build/index"
 }

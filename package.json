@@ -12,7 +12,9 @@
     "lint": "eslint --ext=js,jsx,ts,tsx .",
     "lint:fix": "yarn run lint --fix",
     "prebuild": "yarn clean",
-    "test": "jest"
+    "pretest": "npm run build",
+    "test": "npm run test:only",
+    "test:only": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",

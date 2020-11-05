@@ -1,7 +1,7 @@
 {
   "name": "@chanzuckerberg/demo-b",
   "version": "1.0.0",
-  "main": "src/getNumber",
+  "main": "build/getNumber",
   "dependencies": {
     "@chanzuckerberg/demo-a": "^1.0.0"
   }
