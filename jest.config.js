@@ -8,5 +8,5 @@ module.exports = {
   clearMocks: true,
 
   // The test environment that will be used for testing
-  testEnvironment: "node",
+  testEnvironment: 'node',
 };

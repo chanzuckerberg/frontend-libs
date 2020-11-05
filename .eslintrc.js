@@ -9,6 +9,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:prettier/recommended',
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -20,5 +21,5 @@ module.exports = {
   rules: {},
   settings: {
     'import/extensions': ['.js', '.jsx'],
-  }
+  },
 };
