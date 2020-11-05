@@ -6,12 +6,17 @@
     "packages/*"
   ],
   "scripts": {
+    "lint": "eslint --ext=js,jsx,ts,tsx .",
     "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
     "jest": "^26.6.3"
   },
   "resolutions": {
