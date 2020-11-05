@@ -1,5 +1,7 @@
 # frontend-libs
 
+![Tests](https://github.com/chanzuckerberg/frontend-libs/workflows/Tests/badge.svg)
+
 Monorepo of frontend, TypeScript projects for use by the [Chan Zuckerberg Initiative](https://github.com/chanzuckerberg).
 
 ## Project goals
