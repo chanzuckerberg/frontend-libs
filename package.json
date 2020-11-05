@@ -28,8 +28,5 @@
     "lerna": "^3.22.1",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2"
-  },
-  "resolutions": {
-    "jest-haste-map": "^26.6.2"
   }
 }
