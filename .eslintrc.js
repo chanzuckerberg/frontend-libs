@@ -24,7 +24,7 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
   },
   settings: {
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.json'],
     'import/resolver': {
       typescript: {
         project: 'packages/*/tsconfig.json',

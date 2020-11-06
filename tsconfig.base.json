@@ -9,6 +9,6 @@
     "module": "commonjs",
     "target": "es5",
     "skipLibCheck": true,
-    "strict": true,
-  },
+    "strict": true
+  }
 }

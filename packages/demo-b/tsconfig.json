@@ -4,7 +4,5 @@
     "outDir": "build",
     "rootDir": "src"
   },
-  "references": [
-    {"path": "../demo-a"},
-  ],
+  "references": [{ "path": "../demo-a" }]
 }

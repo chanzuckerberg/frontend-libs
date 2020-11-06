@@ -10,7 +10,7 @@
     "build:js": "lerna exec --parallel -- babel --root-mode=upward --out-dir=build --extensions=.ts,.tsx --ignore='**/*.stories.tsx,**/*.test.ts,**/*.test.tsx' src",
     "build:ts": "tsc --build",
     "clean": "rimraf 'packages/*/build' 'packages/*/*.tsbuildinfo'",
-    "lint": "eslint --ext=js,jsx,ts,tsx .",
+    "lint": "eslint --ext=js,jsx,ts,tsx,json .",
     "lint:fix": "yarn run lint --fix",
     "pretest": "npm run build",
     "test": "npm run test:only",
