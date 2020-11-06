@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "composite": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "lib": ["es2019"],
+    "module": "commonjs",
+    "target": "es5",
+    "skipLibCheck": true,
+    "strict": true,
+  },
+}

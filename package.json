@@ -7,8 +7,9 @@
   ],
   "scripts": {
     "build": "yarn build:js",
-    "build:js": "lerna exec --parallel -- babel --root-mode upward src --out-dir build --ignore **/*.stories.js,**/*.test.js",
-    "clean": "rimraf 'packages/*/build'",
+    "build:js": "lerna exec --parallel -- babel --root-mode=upward --out-dir=build --extensions=.ts,.tsx --ignore='**/*.stories.tsx,**/*.test.ts,**/*.test.tsx' src",
+    "build:ts": "tsc --build",
+    "clean": "rimraf 'packages/*/build' 'packages/*/*.tsbuildinfo'",
     "lint": "eslint --ext=js,jsx,ts,tsx .",
     "lint:fix": "yarn run lint --fix",
     "prebuild": "yarn clean",
@@ -19,16 +20,21 @@
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
-    "@babel/eslint-parser": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@types/jest": "^26.0.15",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.6.3",
     "lerna": "^3.22.1",
     "prettier": "^2.1.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.5"
   }
 }

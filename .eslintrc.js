@@ -7,19 +7,28 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:prettier/recommended',
   ],
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
   },
   ignorePatterns: ['storybook-static/', 'build/'],
-  plugins: ['import', 'jest'],
-  rules: {},
+  plugins: ['@typescript-eslint', 'import', 'jest'],
+  rules: {
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+  },
   settings: {
-    'import/extensions': ['.js', '.jsx'],
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/resolver': {
+      typescript: {
+        project: 'packages/*/tsconfig.json',
+      },
+    },
   },
 };
