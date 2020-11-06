@@ -6,13 +6,12 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn build:js",
+    "build": "scripts/build.sh",
     "build:js": "lerna exec --parallel -- babel --root-mode=upward --out-dir=build --extensions=.ts,.tsx --ignore='**/*.stories.tsx,**/*.test.ts,**/*.test.tsx' src",
     "build:ts": "tsc --build",
     "clean": "rimraf 'packages/*/build' 'packages/*/*.tsbuildinfo'",
     "lint": "eslint --ext=js,jsx,ts,tsx .",
     "lint:fix": "yarn run lint --fix",
-    "prebuild": "yarn clean",
     "pretest": "npm run build",
     "test": "npm run test:only",
     "test:only": "jest"
