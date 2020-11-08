@@ -13,6 +13,7 @@ jobs:
         run: yarn install
       - name: Ensure project references are up to date
         run: yarn check-ts-references
+        if: matrix.os != 'windows-2019'
       - name: Build
         run: yarn build
       - name: Lint
