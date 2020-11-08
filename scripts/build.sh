@@ -22,14 +22,13 @@ yarn build:ts
 # Remove JavaScript files output by tsc.
 #
 # Babel will do its own JavaScript compilation later.
-find packages -path "*/build/*.js" | xargs -I % rm %
+npx rimraf 'packages/*/build/**/*.js'
 
 # Remove declarations for test files, in case tsc produced any.
-find packages \
-  -path "*/build/*.test.d.ts" \
-  -or -path "*/build/*.spec.d.ts" \
-  -or -path "*/build/*.stories.d.ts" \
-  | xargs -I % rm %
+npx rimraf \
+  'packages/*/build/**/*.test.d.ts' \
+  'packages/*/build/**/*.spec.d.ts' \
+  'packages/*/build/**/*.stories.d.ts'
 
 # Finally build the JavaScript with Babel.
 yarn build:js
