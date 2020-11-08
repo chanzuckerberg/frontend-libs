@@ -11,9 +11,11 @@ jobs:
         uses: actions/checkout@master
       - name: Install
         run: yarn install
+      - name: Ensure project references are up to date
+        run: yarn check-ts-references
       - name: Build
         run: yarn build
       - name: Lint
         run: yarn lint
-      - name: Unit Tests
+      - name: Unit tests
         run: yarn test:only
