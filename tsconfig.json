@@ -6,6 +6,9 @@
     },
     {
       "path": "packages/demo-b"
+    },
+    {
+      "path": "packages/eslint-plugin-stories"
     }
   ]
 }
