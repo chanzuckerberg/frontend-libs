@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-function': 'off',
+    'import/order': ['error', { alphabetize: { order: 'asc' } }],
   },
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.json'],
