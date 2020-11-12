@@ -1,9 +1,5 @@
 # eslint-plugin-stories
 
-🚧 This package is a work in progress, and has not been published, yet. 🚧
-
----
-
 [ESLint](https://eslint.org/) rules for [Storybook stories](https://storybook.js.org/docs/react/get-started/whats-a-story).
 
 In particular, these rules ensure that stories can be used in non-Storybook contexts. For example, for accessibility testing via [axe-storybook-testing](https://github.com/chanzuckerberg/axe-storybook-testing), or visual regression testing via [percy-storybook](https://github.com/percy/percy-storybook).
