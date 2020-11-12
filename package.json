@@ -14,6 +14,7 @@
     "lint:fix": "yarn run lint --fix",
     "prepare": "yarn build",
     "pretest": "yarn build",
+    "publish-packages": "lerna publish",
     "test": "yarn test:only",
     "test:only": "jest",
     "update-ts-references": "update-ts-references"
