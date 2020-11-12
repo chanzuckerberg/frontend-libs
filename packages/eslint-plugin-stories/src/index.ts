@@ -9,9 +9,9 @@ const rules = {
 };
 
 const recommendedRules = {
-  'no-jest-in-stories': 'error',
-  'no-top-level-story-args': 'error',
-  'stories-default-export': 'error',
+  '@chanzuckerberg/stories/no-jest-in-stories': 'error',
+  '@chanzuckerberg/stories/no-top-level-story-args': 'error',
+  '@chanzuckerberg/stories/stories-default-export': 'error',
 };
 
 module.exports = {
