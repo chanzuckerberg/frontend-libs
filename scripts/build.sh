@@ -1,34 +1,14 @@
 #!/bin/bash
 
-# Remove all build files.
+# Build everything with tsc, including test files. We only really want non-test files. But I have
+# not have a good way to not compile test files to JS while still type-checking them.
 #
-# Doing so actually defeats one of the purposes of using TypeScript project references, and it will
-# make that step slower. For now we're not relying on project references for its performance
-# characteristics, and we can go ahead and remove everything.
-#
-# If TypeScript compilation ever becomes a bottleneck, we should revisit this.
-yarn clean
-
-# Build everything with tsc.
-#
-# We only want declaration files (*.d.ts), since Babel is compiling the JavaScript. Unfortunately,
-# there currently isn't a way to produce only declaration files with project references and tsc's
-# `--build` flag. To work around that, we'll produce actual JavaScript along with the declaration
-# files. We'll then delete everything we don't want, and let Babel reproduce them later.
-#
-# This is a hack, and if we can discover a better way of handling this, we should revisit this.
+# If we find a good way to do that, we should be able to remove this script with a simple build
+# command.
 yarn build:ts
 
-# Remove JavaScript files output by tsc.
-#
-# Babel will do its own JavaScript compilation later.
-npx rimraf 'packages/*/build/**/*.js'
-
-# Remove declarations for test files, in case tsc produced any.
+# Remove test files and their declarations.
 npx rimraf \
-  'packages/*/build/**/*.test.d.ts' \
-  'packages/*/build/**/*.spec.d.ts' \
-  'packages/*/build/**/*.stories.d.ts'
-
-# Finally build the JavaScript with Babel.
-yarn build:js
+  'packages/*/build/**/*.test.*' \
+  'packages/*/build/**/*.spec.*' \
+  'packages/*/build/**/*.stories.*'

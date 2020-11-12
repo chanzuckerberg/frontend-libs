@@ -7,7 +7,6 @@
   ],
   "scripts": {
     "build": "scripts/build.sh",
-    "build:js": "lerna exec --parallel -- babel --root-mode=upward --out-dir=build --extensions=.ts,.tsx --ignore='**/*.stories.tsx,**/*.test.ts,**/*.test.tsx' src",
     "build:ts": "tsc --build",
     "check-ts-references": "yarn run --silent update-ts-references --check || (echo 'Project references seem to be out of date. Run \"yarn update-ts-references\" and then \"yarn lint:fix\".' && exit 1)",
     "clean": "rimraf 'packages/*/build' 'packages/*/*.tsbuildinfo'",
@@ -19,10 +18,6 @@
     "update-ts-references": "update-ts-references"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-typescript": "^7.12.1",
     "@types/jest": "^26.0.15",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
@@ -36,6 +31,7 @@
     "lerna": "^3.22.1",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.4",
     "typescript": "^4.0.5",
     "update-ts-references": "^1.1.0"
   }
