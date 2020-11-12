@@ -12,8 +12,8 @@
     "clean": "rimraf 'packages/*/build' 'packages/*/*.tsbuildinfo'",
     "lint": "eslint --ext=js,jsx,ts,tsx,json .",
     "lint:fix": "yarn run lint --fix",
-    "pretest": "npm run build",
-    "test": "npm run test:only",
+    "pretest": "yarn build",
+    "test": "yarn test:only",
     "test:only": "jest",
     "update-ts-references": "update-ts-references"
   },
