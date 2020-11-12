@@ -2,10 +2,21 @@
   "name": "@chanzuckerberg/eslint-plugin-stories",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "build/index.js",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "stories",
+    "storybook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanzuckerberg/frontend-libs"
+  },
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-plugin-stories",
   "publishConfig": {
     "access": "public"
   },
+  "main": "build/index.js",
   "files": [
     "build"
   ],
