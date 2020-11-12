@@ -1,5 +1,5 @@
 import { RuleTester } from 'eslint';
-import rule from './no-jest-in-stories';
+import rule from '../no-jest-in-stories';
 
 const ruleTester = new RuleTester({
   parserOptions: {

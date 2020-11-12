@@ -1,4 +1,4 @@
-import isStories from './isStories';
+import isStories from '../isStories';
 
 test('non-stories files', () => {
   expect(isStories('path/to/a/component.tsx')).toEqual(false);

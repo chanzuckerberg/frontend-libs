@@ -9,6 +9,7 @@ yarn build:ts
 
 # Remove test files and their declarations.
 npx rimraf \
+  'packages/*/build/**/__tests__' \
   'packages/*/build/**/*.test.*' \
   'packages/*/build/**/*.spec.*' \
   'packages/*/build/**/*.stories.*'

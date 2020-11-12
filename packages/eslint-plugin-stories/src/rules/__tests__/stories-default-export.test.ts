@@ -1,5 +1,5 @@
 import { RuleTester } from 'eslint';
-import rule from '../../src/rules/stories-default-export';
+import rule from '../stories-default-export';
 
 const ruleTester = new RuleTester({
   parserOptions: {

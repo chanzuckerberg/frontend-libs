@@ -1,5 +1,5 @@
 import { RuleTester } from 'eslint';
-import rule from '../../src/rules/no-top-level-story-args';
+import rule from '../no-top-level-story-args';
 
 const ruleTester = new RuleTester({
   parserOptions: {

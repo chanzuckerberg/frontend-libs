@@ -1,4 +1,4 @@
-import includesAll from './includesAll';
+import includesAll from '../includesAll';
 
 test('empty list and requireds', () => {
   expect(includesAll([], [])).toEqual(true);
