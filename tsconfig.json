@@ -2,12 +2,6 @@
   "files": [],
   "references": [
     {
-      "path": "packages/demo-a"
-    },
-    {
-      "path": "packages/demo-b"
-    },
-    {
       "path": "packages/eslint-plugin-stories"
     }
   ]
