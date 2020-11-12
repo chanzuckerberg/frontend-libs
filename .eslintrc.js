@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:import/typescript',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -23,13 +24,5 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     'import/order': ['error', { alphabetize: { order: 'asc' } }],
-  },
-  settings: {
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.json'],
-    'import/resolver': {
-      typescript: {
-        project: 'packages/*/tsconfig.json',
-      },
-    },
   },
 };
