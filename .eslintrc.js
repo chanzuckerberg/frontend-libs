@@ -12,6 +12,7 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
+    'plugin:testing-library/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,7 +20,7 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['storybook-static/', 'build/'],
-  plugins: ['@typescript-eslint', 'import', 'jest'],
+  plugins: ['@typescript-eslint', 'testing-library', 'import', 'jest'],
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-function': 'off',
