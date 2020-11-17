@@ -3,7 +3,7 @@ import { dedent } from 'ts-dedent';
 import isStories from '../utils/isStories';
 
 const failureMessage = dedent`
-  Don't use external resources in stories. These will take time to load and may cause flakiness with Percy
+  Don't use external resources in stories. These will take time to load and may cause flakiness with Percy.
 
   For images, use images that are committed to the repo and import directly into the story. Webpack will then convert that 
   into a data url, and no network request will be made.
