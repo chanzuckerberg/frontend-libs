@@ -21,8 +21,5 @@
   ],
   "peerDependencies": {
     "@storybook/react": "^6.0.0"
-  },
-  "devDependencies": {
-    "@storybook/react": "^6.0.28"
   }
 }
