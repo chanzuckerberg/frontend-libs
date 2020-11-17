@@ -8,7 +8,6 @@ const failureMessage = dedent`
   For images, use images that are committed to the repo and import directly into the story. Webpack will then convert that 
   into a data url, and no network request will be made.
 
-  
 `;
 
 const rule: Rule.RuleModule = {
@@ -24,7 +23,7 @@ const rule: Rule.RuleModule = {
         // logic here is to look for strings that end with an image file type
         if (
           typeof node.value === 'string' &&
-          node.value.includes('http') &&
+          node.value.startsWith('http') &&
           IMAGE_FILE_TYPES_REGEX.test(node.value)
         ) {
           context.report({
