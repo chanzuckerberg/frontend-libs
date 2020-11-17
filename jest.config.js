@@ -7,6 +7,13 @@ module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
 
+  globals: {
+    'ts-jest': {
+      // Workaround for https://github.com/kulshekhar/ts-jest/issues/1648.
+      tsconfig: 'tsconfig.base.json',
+    },
+  },
+
   // Pre-process TypeScript files with ts-jest.
   preset: 'ts-jest',
 
