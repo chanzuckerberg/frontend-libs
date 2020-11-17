@@ -17,17 +17,21 @@ const rule: Rule.RuleModule = {
       return {};
     }
 
-    const IMAGE_FILE_TYPES_REGEX = /\.(gif|jpe?g|tiff?|png|webp|bmp)$/i
+    const IMAGE_FILE_TYPES_REGEX = /\.(gif|jpe?g|tiff?|png|webp|bmp)$/i;
 
     return {
       Literal(node) {
         // logic here is to look for strings that end with an image file type
-        if (typeof node.value === "string" && node.value.includes("http") && IMAGE_FILE_TYPES_REGEX.test(node.value)) {
+        if (
+          typeof node.value === 'string' &&
+          node.value.includes('http') &&
+          IMAGE_FILE_TYPES_REGEX.test(node.value)
+        ) {
           context.report({
             node,
             message: failureMessage,
           });
-        };
+        }
       },
     };
   },
