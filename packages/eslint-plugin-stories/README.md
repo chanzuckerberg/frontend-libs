@@ -54,3 +54,4 @@ Name                    | Description
 no-jest-in-stories      | Prevent Jest functions from being used in stories, since they can't run in non-Jest environments.
 no-top-level-story-args | Don't allow "args" to be defined in the default export of a stories file. Not allowing those makes it easier to re-use the stories in environments where Storybook is not present.
 stories-default-export  | Enforce that required properties are present in the default export of a stories file.
+no-ext-resources-in-stories  | Prevent external resources from being loaded in stories.
