@@ -1,13 +1,13 @@
-# stories-utils
+# story-utils
 
 Utilities for using [Storybook stories](https://storybook.js.org/docs/react/get-started/whats-a-story) in non-Storybook environments. For example, using stories in Jest tests.
 
 ## Installation
 
-Install @chanzuckerberg/stories-utils with your favorite package manager. With yarn, that would look like
+Install @chanzuckerberg/story-utils with your favorite package manager. With yarn, that would look like
 
 ```sh
-yarn add --dev @chanzuckerberg/stories-utils
+yarn add --dev @chanzuckerberg/story-utils
 ```
 
 ## Utilities
@@ -35,7 +35,7 @@ This utility makes it easy to re-use the story in tests.
 
 // Using testing-library to demonstrate.
 import { render, screen } from '@testing-library/react';
-import { prepareStory } from '@chanzuckerberg/stories-utils';
+import { prepareStory } from '@chanzuckerberg/story-utils';
 import { MyStory } from './MyButton.stories';
 
 test('my button', () => {

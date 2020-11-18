@@ -1,5 +1,5 @@
 {
-  "name": "@chanzuckerberg/stories-utils",
+  "name": "@chanzuckerberg/story-utils",
   "version": "0.1.0",
   "license": "MIT",
   "keywords": [
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/chanzuckerberg/frontend-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/stories-utils",
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/story-utils",
   "publishConfig": {
     "access": "public"
   },

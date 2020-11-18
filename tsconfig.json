@@ -5,7 +5,7 @@
       "path": "packages/eslint-plugin-stories"
     },
     {
-      "path": "packages/stories-utils"
+      "path": "packages/story-utils"
     }
   ]
 }
