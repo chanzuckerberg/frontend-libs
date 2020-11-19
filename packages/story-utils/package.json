@@ -1,0 +1,25 @@
+{
+  "name": "@chanzuckerberg/story-utils",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "stories",
+    "storybook",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanzuckerberg/frontend-libs"
+  },
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/story-utils",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "peerDependencies": {
+    "@storybook/react": "^6.0.0"
+  }
+}

@@ -3,6 +3,9 @@
   "references": [
     {
       "path": "packages/eslint-plugin-stories"
+    },
+    {
+      "path": "packages/story-utils"
     }
   ]
 }
