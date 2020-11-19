@@ -17,6 +17,9 @@ module.exports = {
   // Pre-process TypeScript files with ts-jest.
   preset: 'ts-jest',
 
+  // Test setup after the test environment has been installed.
+  setupFilesAfterEnv: ['./jest.setup.ts'],
+
   // The test environment that will be used for testing
   testEnvironment: 'node',
 };
