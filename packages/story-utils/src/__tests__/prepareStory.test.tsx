@@ -9,7 +9,7 @@ test('no args', () => {
   const Story = () => <button>brew</button>;
 
   render(prepareStory(Story));
-  expect(screen.getByRole('button', { name: 'brew' })).toBeTruthy();
+  expect(screen.getByRole('button', { name: 'brew' })).toBeInTheDocument();
 });
 
 test('args', () => {
@@ -18,7 +18,7 @@ test('args', () => {
   Story.args = { children: 'hiya' };
 
   render(prepareStory(Story));
-  expect(screen.getByRole('button', { name: 'hiya' })).toBeTruthy();
+  expect(screen.getByRole('button', { name: 'hiya' })).toBeInTheDocument();
 });
 
 test('args and overrides', () => {
@@ -27,5 +27,5 @@ test('args and overrides', () => {
   Story.args = { children: 'hiya' };
 
   render(prepareStory(Story, { children: 'byeya' }));
-  expect(screen.getByRole('button', { name: 'byeya' })).toBeTruthy();
+  expect(screen.getByRole('button', { name: 'byeya' })).toBeInTheDocument();
 });
