@@ -17,7 +17,7 @@ export default function prepareStory<Args>(
    * providing specific story args or component props.
    */
   argOverrides?: Partial<Args>,
-) {
+): JSX.Element {
   const args = {
     ...commonEventHandlers,
     ...story.args,

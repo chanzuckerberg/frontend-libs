@@ -22,7 +22,6 @@ module.exports = {
   ignorePatterns: ['storybook-static/', 'build/'],
   plugins: ['@typescript-eslint', 'testing-library', 'import', 'jest'],
   rules: {
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     'import/order': ['error', { alphabetize: { order: 'asc' } }],
   },
