@@ -12,6 +12,25 @@ yarn add --dev @chanzuckerberg/story-utils
 
 ## Utilities
 
+### getStories
+
+Get all stories from the local filesystem. Useful for consuming stories in some way in a Node environment.
+
+```js
+import { getStories } from '@chanzuckerberg/story-utils';
+
+const stories = getStories();
+
+const storyNames = stories.map((story) => story.name);
+console.log('Found stories:', storyNames);
+```
+
+Accepts an optional glob pattern specifying what files to look for.
+
+```js
+const stories = getStories('src/components/**/*.stories.tsx');
+```
+
 ### prepareStory
 
 Take a story and return its React elements for unit testing.
