@@ -2,6 +2,7 @@ import path from 'path';
 import type { Parameters, Story } from '@storybook/react/types-6-0';
 import glob from 'glob';
 import merge from 'lodash/merge';
+import * as zod from 'zod';
 
 type StoryData = {
   componentTitle: string;
@@ -9,6 +10,13 @@ type StoryData = {
   parameters: Parameters;
   storyFn: Story<unknown>;
 };
+
+const metadataSchema = zod
+  .object({
+    title: zod.string(),
+    parameters: zod.record(zod.unknown()).optional(),
+  })
+  .nonstrict();
 
 /**
  * Get information about stories in files matching a glob pattern. Useful for consuming stories in
@@ -20,7 +28,8 @@ export default function getStories(globPattern: string): StoryData[] {
   return filePaths.flatMap((filePath) => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const storiesFileExports = require(path.resolve(filePath));
-    const { default: metadata, ...storiesMap } = storiesFileExports;
+    const { default: rawMetadata, ...storiesMap } = storiesFileExports;
+    const metadata = metadataSchema.parse(rawMetadata);
 
     return Object.keys(storiesMap).map((storyName: string) => {
       const story = storiesMap[storyName] as Story<unknown>;
