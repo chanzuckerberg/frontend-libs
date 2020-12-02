@@ -22,4 +22,9 @@ module.exports = {
 
   // The test environment that will be used for testing
   testEnvironment: 'node',
+
+  // Glob patterns used to find tests. We've modified the default to only find files that have
+  // `spec` or `test` in the filename. This allows us to put util files inside __tests__ directories
+  // without jest thinking they're tests that should be ran.
+  testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
 };
