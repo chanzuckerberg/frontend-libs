@@ -10,8 +10,12 @@ type StoryData = {
   storyFn: Story<unknown>;
 };
 
-export default function getStories(globPath: string): StoryData[] {
-  const filePaths = glob.sync(globPath);
+/**
+ * Get information about stories in files matching a glob pattern. Useful for consuming stories in
+ * a Node environment.
+ */
+export default function getStories(globPattern: string): StoryData[] {
+  const filePaths = glob.sync(globPattern);
 
   return filePaths.flatMap((filePath) => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
