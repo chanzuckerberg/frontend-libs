@@ -19,16 +19,10 @@ Get all stories from the local filesystem. Useful for consuming stories in some 
 ```js
 import { getStories } from '@chanzuckerberg/story-utils';
 
-const stories = getStories();
+const stories = getStories('src/components/**/*.stories.tsx');
 
 const storyNames = stories.map((story) => story.name);
 console.log('Found stories:', storyNames);
-```
-
-Accepts an optional glob pattern specifying what files to look for.
-
-```js
-const stories = getStories('src/components/**/*.stories.tsx');
 ```
 
 ### prepareStory
