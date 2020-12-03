@@ -10,7 +10,7 @@ type StoryData = {
   storyFn: Story<unknown>;
 };
 
-export default function getStories(globPath = '**/*.stories.*'): StoryData[] {
+export default function getStories(globPath: string): StoryData[] {
   const filePaths = glob.sync(globPath);
 
   return filePaths.flatMap((filePath) => {
