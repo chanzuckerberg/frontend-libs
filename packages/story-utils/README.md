@@ -25,6 +25,8 @@ const storyNames = stories.map((story) => story.name);
 console.log('Found stories:', storyNames);
 ```
 
+Note that this validates the stories it finds, and will throw an error if any of the files don't match [component story format](https://storybook.js.org/docs/react/api/csf).
+
 ### prepareStory
 
 Take a story and return its React elements for unit testing.
