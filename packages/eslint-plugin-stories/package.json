@@ -22,8 +22,5 @@
   ],
   "dependencies": {
     "ts-dedent": "^2.0.0"
-  },
-  "devDependencies": {
-    "@types/eslint": "^7.2.5"
   }
 }
