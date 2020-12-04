@@ -21,6 +21,9 @@ const metadataSchema = zod
 /**
  * Get information about stories in files matching a glob pattern. Useful for consuming stories in
  * a Node environment.
+ *
+ * Validates the stories it finds, and will throw an error if they don't match component story
+ * format. @see https://storybook.js.org/docs/react/api/csf
  */
 export default function getStories(globPattern: string): StoryData[] {
   const filePaths = glob.sync(globPattern);
