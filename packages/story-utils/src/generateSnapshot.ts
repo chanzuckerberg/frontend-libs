@@ -1,7 +1,7 @@
-import prepareStory from "./prepareStory";
-import { render, RenderResult } from "@testing-library/react";
-import getStories from "./getStories"
-import type { StoryData } from "./getStories"
+import { render, RenderResult } from '@testing-library/react';
+import { getStoriesFromStoryFileExports } from './getStories';
+import type { StoryData, StoryFileExports } from './getStories';
+import prepareStory from './prepareStory';
 
 type TestOptions<Args> = {
   /**
@@ -10,7 +10,7 @@ type TestOptions<Args> = {
    */
   getSnapshot?: (
     wrapper: RenderResult,
-  ) => Promise<unknown> | unknown;
+  ) => Promise<ChildNode | null> | ChildNode | null;
   /**
    * Override the args for the story. Useful for event handlers that may be missing.
    */
@@ -23,20 +23,22 @@ function getDefaultSnapshot(wrapper: RenderResult) {
 
 /**
  * Runs snapshot tests on all stories imported with `import * as anthology from 'storypath.stories.tsx'`
- * @param anthology the exports of a .stories.tsx file including the default export with additional context
+ * @param exportedStories the exports of a .stories.tsx file including the default export with additional context
  * @param options the options for the test to add necessary context specific to snapshot tests
  */
-export default function generateSnapshot<Args>(globPattern: string, {
-    getSnapshot = getDefaultSnapshot,
-    argOverrides,
-}: TestOptions<Args> = {},
-  ) {
-  const stories = getStories(globPattern);
+export default function generateSnapshot<
+  S extends StoryFileExports<Args>,
+  Args
+>(
+  storiesFileExports: S,
+  { getSnapshot = getDefaultSnapshot, argOverrides }: TestOptions<Args> = {},
+): void {
+  const stories = getStoriesFromStoryFileExports(storiesFileExports);
 
   for (const [storyName, story] of Object.entries<StoryData>(stories)) {
     if (story.parameters?.snapshot?.disabled) continue;
 
-    test(`${storyName} story renders snapshot jksladjsfkl`, async () => {
+    test(`${storyName} story renders snapshot`, async () => {
       const wrapper = render(prepareStory(story.storyFn, argOverrides));
       expect(await getSnapshot(wrapper)).toMatchSnapshot();
     });

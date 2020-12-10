@@ -2,8 +2,10 @@
  * @jest-environment jsdom
  */
 
-import generateSnapshot from "../generateSnapshot";
+import generateSnapshot from '../generateSnapshot';
+import * as storyFileExports from './__mock_stories__/foo.stories';
 
-describe("auto generate snapshots", () => {
-  generateSnapshot("packages/story-utils/**/*.stories.*");
+// We should see snapshots in the subdirectory
+describe('auto generate snapshots for foo', () => {
+  generateSnapshot(storyFileExports);
 });
