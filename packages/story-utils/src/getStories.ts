@@ -4,7 +4,7 @@ import glob from 'glob';
 import merge from 'lodash/merge';
 import * as zod from 'zod';
 
-type StoryData = {
+export type StoryData = {
   componentTitle: string;
   name: string;
   parameters: Parameters;
