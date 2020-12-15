@@ -8,7 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react",
-    "lib": ["es2019"],
+    "lib": ["dom", "es2019"],
     "module": "commonjs",
     "target": "es5",
     "skipLibCheck": true,

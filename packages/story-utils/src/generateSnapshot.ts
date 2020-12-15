@@ -30,10 +30,10 @@ export default function generateSnapshot<
   S extends StoryFileExports<Args>,
   Args
 >(
-  storiesFileExports: S,
+  storyFileExports: S,
   { getSnapshot = getDefaultSnapshot, argOverrides }: TestOptions<Args> = {},
 ): void {
-  const stories = getStoriesFromStoryFileExports(storiesFileExports);
+  const stories = getStoriesFromStoryFileExports(storyFileExports);
 
   for (const [storyName, story] of Object.entries<StoryData>(stories)) {
     if (story.parameters?.snapshot?.disabled) continue;

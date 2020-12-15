@@ -70,3 +70,17 @@ test('my button 2', () => {
   expect(screen.getByText('coffee!')).toBeTruthy();
 });
 ```
+
+### generateSnapshot
+
+Auto generates snapshots for stories
+
+```js
+
+import * as storyFileExports from "./AlongLogo.stories";
+import { generateSnapshot } from "@chanzuckerberg/story-utils";
+
+test("my button", () => {
+  generateSnapshot(storyFileExports);
+});
+```
