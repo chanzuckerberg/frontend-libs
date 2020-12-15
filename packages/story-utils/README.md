@@ -71,16 +71,16 @@ test('my button 2', () => {
 });
 ```
 
-### generateSnapshot
+### generateSnapshots
 
 Auto generates snapshots for stories
 
 ```js
 
-import * as storyFileExports from "./AlongLogo.stories";
-import { generateSnapshot } from "@chanzuckerberg/story-utils";
+import * as snapshotTestStoryFile from "./MyButton.stories";
+import { generateSnapshots } from "@chanzuckerberg/story-utils";
 
-test("my button", () => {
-  generateSnapshot(storyFileExports);
+describe("My button", () => {
+  generateSnapshots(snapshotTestStoryFile);
 });
 ```
