@@ -22,7 +22,7 @@ function getDefaultSnapshot(wrapper: RenderResult) {
 }
 
 /**
- * Runs snapshot tests on all stories imported with `import * as anthology from 'storypath.stories.tsx'`
+ * Runs snapshot tests on all stories imported with `import * as snapshotTestStoryFile from 'storypath.stories.tsx'`
  * @param storyFileExports the exports of a .stories.tsx file including the default export with additional context
  * @param options the options for the test to add necessary context specific to snapshot tests
  */

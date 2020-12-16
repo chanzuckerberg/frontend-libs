@@ -1,8 +1,13 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import React from "react";
+
+function Bar() {
+  return <div>hi</div>
+}
 
 export default {
   title: 'Bar',
-  component: () => 'bar',
+  component: Bar,
 };
 
-export const BarStory1 = () => 'bar story 1';
+export const BarStory1 = () => <Bar />

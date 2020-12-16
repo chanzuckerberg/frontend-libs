@@ -84,3 +84,13 @@ describe("My button", () => {
   generateSnapshots(snapshotTestStoryFile);
 });
 ```
+
+If you want to skip generating snapshots for a story:
+
+```js
+SomeStory.parameters = {
+  snapshot: {
+    disabled: true,
+  },
+};
+```

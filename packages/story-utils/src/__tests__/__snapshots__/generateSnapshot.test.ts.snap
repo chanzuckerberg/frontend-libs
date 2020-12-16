@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`auto generate snapshots for foo FooStory1 story renders snapshot 1`] = `foo story 1`;
-
-exports[`auto generate snapshots for foo FooStory2 story renders snapshot 1`] = `foo story 2`;
+exports[`auto generate snapshots for bar BarStory1 story renders snapshot 1`] = `
+<div>
+  hi
+</div>
+`;
