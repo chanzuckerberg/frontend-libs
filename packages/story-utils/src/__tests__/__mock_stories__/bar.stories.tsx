@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import React from "react";
+import React from 'react';
 
 function Bar() {
-  return <div>hi</div>
+  return <div>hi</div>;
 }
 
 export default {
@@ -10,4 +10,4 @@ export default {
   component: Bar,
 };
 
-export const BarStory1 = () => <Bar />
+export const BarStory1 = () => <Bar />;
