@@ -1,14 +1,16 @@
 import path from 'path';
-import type { Parameters, Story } from '@storybook/react/types-6-0';
+import { Args as DefaultArgs } from '@storybook/addons';
+import type { Meta, Parameters, Story } from '@storybook/react/types-6-0';
 import glob from 'glob';
+import mapValues from 'lodash/mapValues';
 import merge from 'lodash/merge';
 import * as zod from 'zod';
 
-type StoryData = {
+export type StoryData<Args = DefaultArgs> = {
   componentTitle: string;
   name: string;
   parameters: Parameters;
-  storyFn: Story<unknown>;
+  storyFn: Story<Args>;
 };
 
 const metadataSchema = zod
@@ -46,4 +48,39 @@ export default function getStories(globPattern: string): StoryData[] {
       };
     });
   });
+}
+
+/**
+ * The skeleton of an StoryFileExports. Should also contain stories where the default value matches Meta
+ * but the remainder of exports matches Story.
+ *
+ * Should be extended as a generic type `<A extends StoryFileExports<Args>, Args>`.
+ */
+export type StoryFileExports<Args = DefaultArgs> = {
+  default: Meta<Args>;
+};
+
+export function getStoriesFromStoryFileExports<
+  S extends StoryFileExports,
+  Args
+>(
+  storiesFileExports: S,
+): Omit<{ [key in keyof S]: StoryData<Args> }, 'default'> {
+  const { default: metadata, ...storiesMap } = storiesFileExports;
+
+  const stories: unknown = mapValues(
+    storiesMap,
+    (story: Story<Args>, storyName: string) => {
+      const parameters = merge({}, metadata.parameters, story.parameters);
+
+      return {
+        componentTitle: metadata.title,
+        parameters,
+        name: storyName,
+        storyFn: story,
+      };
+    },
+  );
+
+  return stories as Omit<{ [key in keyof S]: StoryData<Args> }, 'default'>;
 }

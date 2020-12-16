@@ -70,3 +70,27 @@ test('my button 2', () => {
   expect(screen.getByText('coffee!')).toBeTruthy();
 });
 ```
+
+### generateSnapshots
+
+Auto generates snapshots for stories
+
+```js
+
+import * as snapshotTestStoryFile from "./MyButton.stories";
+import { generateSnapshots } from "@chanzuckerberg/story-utils";
+
+describe("My button", () => {
+  generateSnapshots(snapshotTestStoryFile);
+});
+```
+
+If you want to skip generating snapshots for a story:
+
+```js
+SomeStory.parameters = {
+  snapshot: {
+    disabled: true,
+  },
+};
+```
