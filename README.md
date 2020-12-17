@@ -20,6 +20,11 @@ Using a monorepo eases the maintenance burden by sharing configuration and tooli
 
 All packages are published separately as NPM packages, and should be installed and used as such. See each package's README.md file for installation and usage instructions.
 
+## Packages
+
+- [eslint-plugin-stories](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/eslint-plugin-stories)
+- [story-utils](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/story-utils)
+
 ## License
 
 All code and packages in this repository are licensed under the [MIT License](https://opensource.org/licenses/MIT).
