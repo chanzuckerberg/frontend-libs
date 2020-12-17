@@ -12,6 +12,10 @@ yarn add --dev @chanzuckerberg/story-utils
 
 ## Utilities
 
+- [generateSnapshots](#generatesnapshots)
+- [getStories](#getstories)
+- [prepareStory](#preparestory)
+
 ### generateSnapshots
 
 Auto generates snapshots for stories
