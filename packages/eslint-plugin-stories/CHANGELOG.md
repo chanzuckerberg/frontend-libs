@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 1.1.3 (2020-12-16)
+
+Nothing in this release... Published a new version because another package in this monorepo was published, and Lerna publishes either everything, or nothing.
+
 ## 1.1.2 (2020-12-04)
 
 - Updated dependencies

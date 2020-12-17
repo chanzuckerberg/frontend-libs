@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.2.0 (2020-12-16)
+
 - [new] Added `generateSnapshots` helper - [#8](https://github.com/chanzuckerberg/frontend-libs/pull/8)
 
 ## 1.1.0 (2020-12-04)
