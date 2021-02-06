@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [maintenance] Run `update-ts-references` on CI for Windows - [#11](https://github.com/chanzuckerberg/frontend-libs/pull/11)
+
 ## 1.1.3 (2020-12-16)
 
 Nothing in this release... Published a new version because another package in this monorepo was published, and Lerna publishes either everything, or nothing.
