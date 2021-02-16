@@ -3,6 +3,7 @@
 ## Unreleased
 
 - [maintenance] Run `update-ts-references` on CI for Windows - [#11](https://github.com/chanzuckerberg/frontend-libs/pull/11)
+- [new] Added the `no-story-decorators` rule
 
 ## 1.1.3 (2020-12-16)
 
