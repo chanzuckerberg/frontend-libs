@@ -3,6 +3,7 @@
 ## Unreleased
 
 - [breaking] Change the `generationSnapshot` option `disabled` to `skip`.
+- [maintenance] Upgrade dependencies
 
 ## 1.2.1 (2021-02-16)
 
