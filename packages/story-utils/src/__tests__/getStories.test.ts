@@ -11,6 +11,12 @@ test('finding stories', () => {
       storyFn: expect.any(Function),
     },
     {
+      componentTitle: 'Bar',
+      name: 'BarStory2',
+      parameters: expect.any(Object),
+      storyFn: expect.any(Function),
+    },
+    {
       componentTitle: 'Foo',
       name: 'FooStory1',
       parameters: expect.any(Object),
@@ -33,7 +39,7 @@ test('merging parameters', () => {
       name: 'FooStory1',
       parameters: {
         axe: {
-          disabled: true,
+          skip: true,
           rules: ['color-contrast'],
         },
       },

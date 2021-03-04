@@ -13,7 +13,7 @@ export default {
 export const FooStory1 = () => 'foo story 1';
 FooStory1.parameters = {
   axe: {
-    disabled: true,
+    skip: true,
   },
 };
 
