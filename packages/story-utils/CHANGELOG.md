@@ -2,8 +2,10 @@
 
 ## Unreleased
 
-- [breaking] Change the `generationSnapshot` option `disabled` to `skip`.
-- [maintenance] Upgrade dependencies
+## 2.0.0 (2021-03-04)
+
+- [breaking] Change the `generationSnapshot` option `disabled` to `skip` - [#13](https://github.com/chanzuckerberg/frontend-libs/pull/13)
+- [maintenance] Upgrade dependencies - [#14](https://github.com/chanzuckerberg/frontend-libs/pull/14)
 
 ## 1.2.1 (2021-02-16)
 
