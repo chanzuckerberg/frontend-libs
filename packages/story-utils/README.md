@@ -35,7 +35,7 @@ If you want to skip generating snapshots for a story:
 ```js
 SomeStory.parameters = {
   snapshot: {
-    disabled: true,
+    skip: true,
   },
 };
 ```

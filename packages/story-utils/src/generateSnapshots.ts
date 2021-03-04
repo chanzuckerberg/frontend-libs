@@ -36,7 +36,7 @@ export default function generateSnapshots<
   const stories = getStoriesFromStoryFileExports(storyFileExports);
 
   for (const [storyName, story] of Object.entries<StoryData>(stories)) {
-    if (story.parameters?.snapshot?.disabled) continue;
+    if (story.parameters?.snapshot?.skip) continue;
 
     test(`${storyName} story renders snapshot`, async () => {
       const wrapper = render(prepareStory(story.storyFn, argOverrides));
