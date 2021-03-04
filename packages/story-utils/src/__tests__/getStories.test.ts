@@ -39,7 +39,7 @@ test('merging parameters', () => {
       name: 'FooStory1',
       parameters: {
         axe: {
-          disabled: true,
+          skip: true,
           rules: ['color-contrast'],
         },
       },

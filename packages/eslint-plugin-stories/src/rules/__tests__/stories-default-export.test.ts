@@ -46,8 +46,8 @@ ruleTester.run('stories-default-export', rule, {
           title: "UI/Button",
           component: Button,
           parameters: {
-            jest: {
-              disabled: true,
+            renderSpec: {
+              skip: true,
             },
           },
         };
