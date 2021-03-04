@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [maintenance] Upgrade dependencies
+
 ## 1.2.0 (2021-02-16)
 
 - [maintenance] Run `update-ts-references` on CI for Windows - [#11](https://github.com/chanzuckerberg/frontend-libs/pull/11)
