@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Update dependencies
+
 ## 1.2.1 (2021-03-04)
 
 - [maintenance] Upgrade dependencies - [#14](https://github.com/chanzuckerberg/frontend-libs/pull/14)

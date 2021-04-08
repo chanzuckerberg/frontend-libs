@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Update dependencies
+
 ## 2.0.0 (2021-03-04)
 
 - [breaking] Change the `generationSnapshot` option `disabled` to `skip` - [#13](https://github.com/chanzuckerberg/frontend-libs/pull/13)
