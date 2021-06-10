@@ -48,7 +48,7 @@ export default function prepareStory<Args>(
     // On a technical note, we have to cast to `unknown` before `Args`. Because we're adding common
     // event handlers to `args`, its type doesn't overlap enough with `Args` for TypeScript to be
     // comfortable with us directly casting to it.
-    (args as unknown) as Args,
+    args as unknown as Args,
     context,
   );
 }

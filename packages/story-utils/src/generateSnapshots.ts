@@ -28,7 +28,7 @@ function getDefaultSnapshot(wrapper: RenderResult) {
  */
 export default function generateSnapshots<
   S extends StoryFileExports<Args>,
-  Args
+  Args,
 >(
   storyFileExports: S,
   { getSnapshot = getDefaultSnapshot, argOverrides }: TestOptions<Args> = {},
@@ -39,8 +39,8 @@ export default function generateSnapshots<
     if (story.parameters?.snapshot?.skip) continue;
 
     test(`${storyName} story renders snapshot`, async () => {
-      const wrapper = render(prepareStory(story.storyFn, argOverrides));
-      expect(await getSnapshot(wrapper)).toMatchSnapshot();
+      const view = render(prepareStory(story.storyFn, argOverrides));
+      expect(await getSnapshot(view)).toMatchSnapshot();
     });
   }
 }

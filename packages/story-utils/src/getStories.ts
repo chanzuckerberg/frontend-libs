@@ -62,7 +62,7 @@ export type StoryFileExports<Args = DefaultArgs> = {
 
 export function getStoriesFromStoryFileExports<
   S extends StoryFileExports,
-  Args
+  Args,
 >(
   storiesFileExports: S,
 ): Omit<{ [key in keyof S]: StoryData<Args> }, 'default'> {
