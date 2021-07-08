@@ -10,10 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Install
-        # Ignore scripts such as `prepare`, which normally run on install. We're using `prepare` to
-        # build the TypeScript for local development. Here on CI, though, we don't want this to fail
-        # on any type errors. Instead, the build step will catch and report those.
-        run: yarn install --ignore-scripts
+        run: yarn install
       - name: Build
         run: yarn build
       - name: Ensure project references are up to date
