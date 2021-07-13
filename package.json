@@ -12,10 +12,9 @@
     "clean": "rimraf 'packages/*/build' '**/*.tsbuildinfo'",
     "lint": "eslint --ext=js,jsx,ts,tsx,json .",
     "lint:fix": "yarn run lint --fix",
-    "prepare": "yarn build",
-    "pretest": "yarn build",
+    "prepack": "yarn build",
     "publish-packages": "lerna publish",
-    "test": "yarn test:only",
+    "test": "yarn build && yarn test:only",
     "test:only": "jest",
     "update-ts-references": "update-ts-references"
   },
