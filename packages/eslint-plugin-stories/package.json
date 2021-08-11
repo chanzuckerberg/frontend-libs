@@ -21,6 +21,6 @@
     "build"
   ],
   "dependencies": {
-    "ts-dedent": "^2.1.1"
+    "ts-dedent": "^2.2.0"
   }
 }
