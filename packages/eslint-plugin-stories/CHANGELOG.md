@@ -4,6 +4,7 @@
 
 - Update dependencies
 - [breaking] Publish ES modules instead of CommonJS
+- [breaking] Compile to es2015 instead of es5
 
 ## 1.2.1 (2021-03-04)
 
