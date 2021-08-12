@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Update dependencies
+- [breaking] Publish ES modules instead of CommonJS
 
 ## 2.0.0 (2021-03-04)
 
