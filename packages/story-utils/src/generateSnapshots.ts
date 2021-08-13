@@ -2,6 +2,7 @@ import { render, RenderResult } from '@testing-library/react';
 import { getStoriesFromStoryFileExports } from './getStories';
 import type { StoryData, StoryFileExports } from './getStories';
 import prepareStory from './prepareStory';
+import wait from './wait';
 
 type TestOptions<Args> = {
   /**
