@@ -2,7 +2,10 @@
 
 ## Unreleased
 
+## 2.1.0 (2021-08-13)
 - Update dependencies
+- [new] Add `wait` helper - [#17](https://github.com/chanzuckerberg/frontend-libs/pull/17)
+- [fix] Push generating snapshots to the end of the event loop in `generateSnapshots` - [#17](https://github.com/chanzuckerberg/frontend-libs/pull/17)
 
 ## 2.0.0 (2021-03-04)
 
