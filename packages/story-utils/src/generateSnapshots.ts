@@ -2,6 +2,7 @@ import { render, RenderResult } from '@testing-library/react';
 import { getStoriesFromStoryFileExports } from './getStories';
 import type { StoryData, StoryFileExports } from './getStories';
 import prepareStory from './prepareStory';
+import wait from './wait';
 
 type TestOptions<Args> = {
   /**
@@ -40,6 +41,12 @@ export default function generateSnapshots<
 
     test(`${storyName} story renders snapshot`, async () => {
       const view = render(prepareStory(story.storyFn, argOverrides));
+
+      // When components that include Apollo's useQuery are rendered we need
+      // to await an act that pushes the test to the end of the event loop.
+      // https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/
+      await wait();
+
       expect(await getSnapshot(view)).toMatchSnapshot();
     });
   }
