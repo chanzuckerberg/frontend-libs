@@ -44,9 +44,9 @@ export default function generateSnapshots<
 
       // When components that include Apollo's useQuery are rendered we need
       // to await an act that pushes the test to the end of the event loop.
-      // https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/ 
+      // https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/
       await wait();
-      
+
       expect(await getSnapshot(view)).toMatchSnapshot();
     });
   }
