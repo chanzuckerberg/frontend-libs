@@ -1,10 +1,10 @@
+import type { Meta, Story } from '@storybook/react';
+import { composeStories } from '@storybook/testing-react';
 import { render, RenderResult } from '@testing-library/react';
-import { getStoriesFromStoryFileExports } from './getStories';
-import type { StoryData, StoryFileExports } from './getStories';
-import prepareStory from './prepareStory';
+import { createElement } from 'react';
 import wait from './wait';
 
-type TestOptions<Args> = {
+type TestOptions = {
   /**
    * get the snapshot either synchronously, returning the ChildNode,
    * or asynchronously returning a promise that resolves to the ChildNode.
@@ -12,10 +12,10 @@ type TestOptions<Args> = {
   getSnapshot?: (
     wrapper: RenderResult,
   ) => Promise<ChildNode | null> | ChildNode | null;
-  /**
-   * Override the args for the story. Useful for event handlers that may be missing.
-   */
-  argOverrides?: Partial<Args>;
+};
+
+type StoriesImport = {
+  default: Meta;
 };
 
 function getDefaultSnapshot(wrapper: RenderResult) {
@@ -27,20 +27,17 @@ function getDefaultSnapshot(wrapper: RenderResult) {
  * @param storyFileExports the exports of a .stories.tsx file including the default export with additional context
  * @param options the options for the test to add necessary context specific to snapshot tests
  */
-export default function generateSnapshots<
-  S extends StoryFileExports<Args>,
-  Args,
->(
-  storyFileExports: S,
-  { getSnapshot = getDefaultSnapshot, argOverrides }: TestOptions<Args> = {},
+export default function generateSnapshots(
+  storiesImport: StoriesImport,
+  { getSnapshot = getDefaultSnapshot }: TestOptions = {},
 ): void {
-  const stories = getStoriesFromStoryFileExports(storyFileExports);
+  const stories = composeStories(storiesImport);
 
-  for (const [storyName, story] of Object.entries<StoryData>(stories)) {
-    if (story.parameters?.snapshot?.skip) continue;
+  for (const [storyName, Story] of Object.entries<Story>(stories)) {
+    if (Story.parameters?.snapshot?.skip) continue;
 
     test(`${storyName} story renders snapshot`, async () => {
-      const view = render(prepareStory(story.storyFn, argOverrides));
+      const view = render(createElement(Story));
 
       // When components that include Apollo's useQuery are rendered we need
       // to await an act that pushes the test to the end of the event loop.
