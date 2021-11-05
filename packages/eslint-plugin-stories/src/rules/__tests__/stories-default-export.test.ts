@@ -70,7 +70,7 @@ ruleTester.run('stories-default-export', rule, {
         };
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'ObjectExpression' }],
+      errors: [{ type: 'ExportDefaultDeclaration' }],
     },
     {
       // Missing default export.

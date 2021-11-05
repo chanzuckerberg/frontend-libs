@@ -1,5 +1,4 @@
 import type { Rule } from 'eslint';
-import includesAll from '../utils/includesAll';
 import isStories from '../utils/isStories';
 
 const rule: Rule.RuleModule = {
@@ -11,23 +10,24 @@ const rule: Rule.RuleModule = {
     }
 
     return {
-      ObjectExpression(node) {
-        if (node.parent.type !== 'ExportDefaultDeclaration') {
+      ExportDefaultDeclaration(node) {
+        hasDefaultExport = true;
+
+        if (node.declaration.type !== 'ObjectExpression') {
           return;
         }
 
-        hasDefaultExport = true;
-
-        const propertyNames = node.properties.map((property) => {
+        const propertyNames = node.declaration.properties.map((property) => {
           if (property.type === 'Property') {
             const key = property.key;
+
             if (key.type === 'Identifier') {
               return key.name;
             }
           }
         });
 
-        if (!includesAll(propertyNames, ['component'])) {
+        if (!propertyNames.includes('component')) {
           context.report({
             node,
             message:
