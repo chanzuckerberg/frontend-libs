@@ -27,11 +27,11 @@ const rule: Rule.RuleModule = {
           }
         });
 
-        if (!includesAll(propertyNames, ['title', 'component'])) {
+        if (!includesAll(propertyNames, ['component'])) {
           context.report({
             node,
             message:
-              'Storybook stories default export must include `title` and `component`',
+              'Storybook stories default export must include `component`',
           });
         }
       },
@@ -40,7 +40,7 @@ const rule: Rule.RuleModule = {
           context.report({
             node,
             message:
-              'Storybook stories files must have a default export of an object with at least `title` and `component` keys',
+              'Storybook stories files must have a default export of an object with at least a `component` key',
           });
         }
       },

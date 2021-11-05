@@ -21,17 +21,16 @@ ruleTester.run('stories-default-export', rule, {
       filename: 'src/components/Button/Button.stories.tsx',
     },
     {
-      // Both title and component are present.
+      // Only component is present.
       code: `
         export default {
-          title: "UI/Button",
           component: Button,
         };
       `,
       filename: 'src/components/Button/Button.stories.tsx',
     },
     {
-      // Missing a required property, but in a non-stories file.
+      // Missing a component, but in a non-stories file.
       code: `
         export default {
           title: "UI/Button",
@@ -68,16 +67,6 @@ ruleTester.run('stories-default-export', rule, {
       code: `
         export default {
           title: "UI/Button",
-        };
-      `,
-      filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'ObjectExpression' }],
-    },
-    {
-      // Missing title.
-      code: `
-        export default {
-          component: Button,
         };
       `,
       filename: 'src/components/Button/Button.stories.tsx',
