@@ -1,4 +1,4 @@
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, Story, StoryContext } from '@storybook/react';
 import { composeStories } from '@storybook/testing-react';
 import { render, RenderResult } from '@testing-library/react';
 import { createElement } from 'react';
@@ -38,6 +38,18 @@ export default function generateSnapshots(
 
     test(`${storyName} story renders snapshot`, async () => {
       const view = render(createElement(Story));
+
+      // @storybook/testing-react doesn't run play functions automatically (as of v1.0.0-next.0).
+      // So if one is present, run it before taking a snapshot.
+      if (Story.play) {
+        // @storybook/testing-react's docs (as of v1.0.0-next.0) don't indicate that we need to
+        // pass anything to `Story.play`. But its type does require a story context to be passed
+        // in. Assume for now that we don't need to pass anything in, but trick TypeScript into
+        // thinking we are. Hopefully the types get updated in the future.
+        const storyContext = undefined as StoryContext<any>; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+        await Story.play(storyContext);
+      }
 
       // When components that include Apollo's useQuery are rendered we need
       // to await an act that pushes the test to the end of the event loop.
