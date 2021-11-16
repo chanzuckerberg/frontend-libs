@@ -8,6 +8,7 @@
 - [breaking] Added new peer dependency on any version of React. This was already implicit (since React testing-library is being used)
 - [breaking] `prepareStory` has been removed. @storybook/testing-react can be used instead
 - [breaking] `getStories` has been removed, to simplify supporting Storybook 6.4. It's not used much
+- [breaking] Rename the `getSnapshot` option of `generateSnapshot` to `getElement`, to better describe what it is for
 
 ## 2.1.0 (2021-08-13)
 - Update dependencies

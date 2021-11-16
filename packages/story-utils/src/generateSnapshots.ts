@@ -6,10 +6,9 @@ import wait from './wait';
 
 type TestOptions = {
   /**
-   * get the snapshot either synchronously, returning the ChildNode,
-   * or asynchronously returning a promise that resolves to the ChildNode.
+   * Get the element to snapshot, either synchronously or asynchronously.
    */
-  getSnapshot?: (
+  getElement?: (
     wrapper: RenderResult,
   ) => Promise<ChildNode | null> | ChildNode | null;
 };
@@ -18,10 +17,6 @@ type StoriesImport = {
   default: Meta;
 };
 
-function getDefaultSnapshot(wrapper: RenderResult) {
-  return wrapper.container.firstChild;
-}
-
 /**
  * Runs snapshot tests on all stories imported with `import * as snapshotTestStoryFile from 'storypath.stories.tsx'`
  * @param storyFileExports the exports of a .stories.tsx file including the default export with additional context
@@ -29,7 +24,7 @@ function getDefaultSnapshot(wrapper: RenderResult) {
  */
 export default function generateSnapshots(
   storiesImport: StoriesImport,
-  { getSnapshot = getDefaultSnapshot }: TestOptions = {},
+  { getElement = (wrapper) => wrapper.container.firstChild }: TestOptions = {},
 ): void {
   const stories = composeStories(storiesImport);
 
@@ -56,7 +51,7 @@ export default function generateSnapshots(
       // https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/
       await wait();
 
-      expect(await getSnapshot(view)).toMatchSnapshot();
+      expect(await getElement(view)).toMatchSnapshot();
     });
   }
 }
