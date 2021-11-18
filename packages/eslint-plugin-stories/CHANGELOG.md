@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [breaking] Output ES2019 instead of ES6
+
 ## 1.2.2 (2021-08-13)
 
 - Update dependencies

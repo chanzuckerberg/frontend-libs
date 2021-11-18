@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [breaking] Output ES2019 instead of ES6
+
 ## 2.1.0 (2021-08-13)
 - Update dependencies
 - [new] Add `wait` helper - [#17](https://github.com/chanzuckerberg/frontend-libs/pull/17)
