@@ -17,6 +17,10 @@
     "access": "public"
   },
   "main": "build/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=14"
+  },
   "files": [
     "build"
   ],
