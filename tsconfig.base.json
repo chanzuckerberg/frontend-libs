@@ -9,7 +9,8 @@
     "isolatedModules": true,
     "jsx": "react",
     "lib": ["dom", "es2019"],
-    "module": "commonjs",
+    "module": "es6",
+    "moduleResolution": "node",
     "target": "es2019",
     "skipLibCheck": true,
     "strict": true

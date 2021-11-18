@@ -3,6 +3,7 @@
 ## Unreleased
 
 - [breaking] Output ES2019 instead of ES6
+- [breaking] Output [ES modules](https://nodejs.org/api/esm.html) instead of CommonJS
 
 ## 2.1.0 (2021-08-13)
 - Update dependencies
