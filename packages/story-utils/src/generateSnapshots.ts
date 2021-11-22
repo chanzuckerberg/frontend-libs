@@ -39,8 +39,8 @@ export default function generateSnapshots(
     test(`${storyName} story renders snapshot`, async () => {
       const view = render(createElement(Story));
 
-      // @storybook/testing-react doesn't run play functions automatically (as of v1.0.0-next.0).
-      // So if one is present, run it before taking a snapshot.
+      // @storybook/testing-react doesn't run play functions automatically (as of v1.0.0). So if
+      // one is present, run it before taking a snapshot.
       if (Story.play) {
         // @storybook/testing-react's docs (as of v1.0.0-next.0) don't indicate that we need to
         // pass anything to `Story.play`. But its type does require a story context to be passed
