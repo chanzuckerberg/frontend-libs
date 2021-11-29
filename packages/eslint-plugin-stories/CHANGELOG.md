@@ -2,9 +2,11 @@
 
 ## Unreleased
 
+## 2.0.1 (2021-11-29)
+
 - [maintenance] Revert https://github.com/chanzuckerberg/frontend-libs/pull/19 and go back to CommonJS modules (technicalyl this is breaking, but there are no downloads of v3.0.0)
 
-## 2.0.0 (2021-11-29
+## 2.0.0 (2021-11-29)
 
 - [breaking] Output ES2019 instead of ES6 - [#19](https://github.com/chanzuckerberg/frontend-libs/pull/19)
 - [breaking] Output [ES modules](https://nodejs.org/api/esm.html) instead of CommonJS - [#19](https://github.com/chanzuckerberg/frontend-libs/pull/19)
