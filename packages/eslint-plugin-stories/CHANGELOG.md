@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.0.0 (2021-11-29
+
 - [breaking] Output ES2019 instead of ES6 - [#19](https://github.com/chanzuckerberg/frontend-libs/pull/19)
 - [breaking] Output [ES modules](https://nodejs.org/api/esm.html) instead of CommonJS - [#19](https://github.com/chanzuckerberg/frontend-libs/pull/19)
 - [breaking] Removed the `no-story-decorators` rule, because @storybook/testing-react will find and use decorators - [#18](https://github.com/chanzuckerberg/frontend-libs/pull/18)
