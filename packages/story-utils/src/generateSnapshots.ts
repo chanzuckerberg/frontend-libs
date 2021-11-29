@@ -1,5 +1,5 @@
-import type { Meta, Story, StoryContext } from '@storybook/react';
-import { composeStories } from '@storybook/testing-react';
+import type { Meta } from '@storybook/react';
+import { composeStories, composeStory } from '@storybook/testing-react';
 import { render, RenderResult } from '@testing-library/react';
 import { createElement } from 'react';
 import wait from './wait';
@@ -13,9 +13,23 @@ type TestOptions = {
   ) => Promise<ChildNode | null> | ChildNode | null;
 };
 
+/**
+ * Type for the star import of a stories file. For example:
+ *
+ *   import * as stories from './foo.stories.tsx';
+ *
+ * Technically there will also be stories themselves on the import, but there doesn't seem to be a
+ * good way to type those.
+ */
 type StoriesImport = {
   default: Meta;
 };
+
+/**
+ * composeStories uses composeStory. There's no explicit type exported that we can use while
+ * iterating stories (as of v1.0.0), so instead directly use the return type of the function.
+ */
+type ComposedStory = ReturnType<typeof composeStory>;
 
 /**
  * Generate snapshot tests for all stories imported from a file.
@@ -33,7 +47,7 @@ export default function generateSnapshots(
 ): void {
   const stories = composeStories(storiesImport);
 
-  for (const [storyName, Story] of Object.entries<Story>(stories)) {
+  for (const [storyName, Story] of Object.entries<ComposedStory>(stories)) {
     if (Story.parameters?.snapshot?.skip) continue;
 
     test(`${storyName} story renders snapshot`, async () => {
@@ -42,11 +56,11 @@ export default function generateSnapshots(
       // @storybook/testing-react doesn't run play functions automatically (as of v1.0.0). So if
       // one is present, run it before taking a snapshot.
       if (Story.play) {
-        // @storybook/testing-react's docs (as of v1.0.0-next.0) don't indicate that we need to
-        // pass anything to `Story.play`. But its type does require a story context to be passed
-        // in. Assume for now that we don't need to pass anything in, but trick TypeScript into
-        // thinking we are. Hopefully the types get updated in the future.
-        const storyContext = undefined as StoryContext<any>; // eslint-disable-line @typescript-eslint/no-explicit-any
+        const storyContext = {
+          loaded: {},
+          abortSignal: new AbortController().signal,
+          canvasElement: document.createElement('div'),
+        };
 
         await Story.play(storyContext);
       }
