@@ -1,6 +1,6 @@
 {
   "name": "@chanzuckerberg/eslint-plugin-stories",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "license": "MIT",
   "keywords": [
     "eslint",
