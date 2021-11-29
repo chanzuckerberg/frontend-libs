@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Provide common event handlers to stories in `generateSnapshots` to simulate the behavior of @storybook/addon-controls [#21](https://github.com/chanzuckerberg/frontend-libs/pull/21)
+
 ## 3.0.1 (2021-11-29)
 
 - [maintenance] Revert https://github.com/chanzuckerberg/frontend-libs/pull/19 and go back to CommonJS modules (technicalyl this is breaking, but there are no downloads of v3.0.0)

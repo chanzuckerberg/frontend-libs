@@ -51,7 +51,7 @@ export default function generateSnapshots(
     if (Story.parameters?.snapshot?.skip) continue;
 
     test(`${storyName} story renders snapshot`, async () => {
-      const view = render(createElement(Story));
+      const view = render(createElement(Story, commonEventHandlers));
 
       // @storybook/testing-react doesn't run play functions automatically (as of v1.0.0). So if
       // one is present, run it before taking a snapshot.
@@ -74,3 +74,59 @@ export default function generateSnapshots(
     });
   }
 }
+
+/**
+ * Common event handlers, from https://reactjs.org/docs/events.html.
+ *
+ * The [Storybook actions addon](https://storybook.js.org/docs/react/essentials/actions) analyzes
+ * the TypeScript types and provides values for any props matching the pattern "onFoo".
+ *
+ * Unfortunately, there's not currently an easy way to do the same thing outside the context of
+ * Storybook.
+ *
+ * Instead, we'll provide these default values for common functions. This will provide values for
+ * many component's event handlers, but not all. For any not covered here, users will need to
+ * explicitly provide values in stories.
+ */
+const commonEventHandlers = {
+  onAnimationStart: () => {},
+  onAnimationEnd: () => {},
+  onAnimationIteration: () => {},
+  onChange: () => {},
+  onClick: () => {},
+  onContextMenu: () => {},
+  onDoubleClick: () => {},
+  onDrag: () => {},
+  onDragEnd: () => {},
+  onDragEnter: () => {},
+  onDragExit: () => {},
+  onDragLeave: () => {},
+  onDragOver: () => {},
+  onDragStart: () => {},
+  onDrop: () => {},
+  onError: () => {},
+  onInput: () => {},
+  onInvalid: () => {},
+  onKeyDown: () => {},
+  onKeyPress: () => {},
+  onKeyUp: () => {},
+  onLoad: () => {},
+  onMouseDown: () => {},
+  onMouseEnter: () => {},
+  onMouseLeave: () => {},
+  onMouseMove: () => {},
+  onMouseOut: () => {},
+  onMouseOver: () => {},
+  onMouseUp: () => {},
+  onReset: () => {},
+  onScroll: () => {},
+  onSelect: () => {},
+  onSubmit: () => {},
+  onToggle: () => {},
+  onTouchCancel: () => {},
+  onTouchEnd: () => {},
+  onTouchMove: () => {},
+  onTouchStart: () => {},
+  onTransitionEnd: () => {},
+  onWheel: () => {},
+};
