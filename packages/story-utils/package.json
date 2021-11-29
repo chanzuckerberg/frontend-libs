@@ -24,12 +24,14 @@
     "build"
   ],
   "peerDependencies": {
-    "@storybook/react": "^6.0.0",
-    "@testing-library/react": "^11.0.0"
+    "@storybook/react": ">=6.4.0",
+    "@testing-library/react": ">=11.0.0",
+    "react": "*"
   },
   "dependencies": {
-    "glob": "^7.1.7",
-    "lodash": "^4.17.21",
-    "zod": "^1.11.17"
+    "@storybook/testing-react": "^1.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.4.0"
   }
 }

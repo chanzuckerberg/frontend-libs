@@ -1,5 +1,4 @@
 import type { Rule } from 'eslint';
-import includesAll from '../utils/includesAll';
 import isStories from '../utils/isStories';
 
 const rule: Rule.RuleModule = {
@@ -11,27 +10,28 @@ const rule: Rule.RuleModule = {
     }
 
     return {
-      ObjectExpression(node) {
-        if (node.parent.type !== 'ExportDefaultDeclaration') {
+      ExportDefaultDeclaration(node) {
+        hasDefaultExport = true;
+
+        if (node.declaration.type !== 'ObjectExpression') {
           return;
         }
 
-        hasDefaultExport = true;
-
-        const propertyNames = node.properties.map((property) => {
+        const propertyNames = node.declaration.properties.map((property) => {
           if (property.type === 'Property') {
             const key = property.key;
+
             if (key.type === 'Identifier') {
               return key.name;
             }
           }
         });
 
-        if (!includesAll(propertyNames, ['title', 'component'])) {
+        if (!propertyNames.includes('component')) {
           context.report({
             node,
             message:
-              'Storybook stories default export must include `title` and `component`',
+              'Storybook stories default export must include `component`',
           });
         }
       },
@@ -40,7 +40,7 @@ const rule: Rule.RuleModule = {
           context.report({
             node,
             message:
-              'Storybook stories files must have a default export of an object with at least `title` and `component` keys',
+              'Storybook stories files must have a default export of an object with at least a `component` key',
           });
         }
       },

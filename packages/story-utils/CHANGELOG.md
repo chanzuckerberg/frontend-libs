@@ -4,6 +4,11 @@
 
 - [breaking] Output ES2019 instead of ES6 - [#19](https://github.com/chanzuckerberg/frontend-libs/pull/19)
 - [breaking] Output [ES modules](https://nodejs.org/api/esm.html) instead of CommonJS - [#19](https://github.com/chanzuckerberg/frontend-libs/pull/19)
+- [breaking] The `argOverrides` option for `generateSnapshot` has been removed - [#18](https://github.com/chanzuckerberg/frontend-libs/pull/18)
+- [breaking] Added new peer dependency on any version of React. This was already implicit (since React testing-library is being used) - [#18](https://github.com/chanzuckerberg/frontend-libs/pull/18)
+- [breaking] `prepareStory` has been removed. @storybook/testing-react can be used instead - [#18](https://github.com/chanzuckerberg/frontend-libs/pull/18)
+- [breaking] `getStories` has been removed, to simplify supporting Storybook 6.4. It's not used much - [#18](https://github.com/chanzuckerberg/frontend-libs/pull/18)
+- [breaking] Rename the `getSnapshot` option of `generateSnapshot` to `getElement`, to better describe what it is for - [#18](https://github.com/chanzuckerberg/frontend-libs/pull/18)
 
 ## 2.1.0 (2021-08-13)
 - Update dependencies
