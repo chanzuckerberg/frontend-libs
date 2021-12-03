@@ -31,6 +31,6 @@
     "@storybook/testing-react": "^1.0.0"
   },
   "devDependencies": {
-    "@storybook/react": "^6.4.0"
+    "@storybook/react": "^6.4.7"
   }
 }
