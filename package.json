@@ -13,7 +13,7 @@
     "lint": "eslint --ext=js,jsx,ts,tsx,json .",
     "lint:fix": "yarn run lint --fix",
     "prepack": "yarn build",
-    "publish-packages": "lerna publish",
+    "publish-packages": "yarn clean && lerna publish",
     "test": "yarn build && yarn test:only",
     "test:only": "jest",
     "update-ts-references": "update-ts-references"
