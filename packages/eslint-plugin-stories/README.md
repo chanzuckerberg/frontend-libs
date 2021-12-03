@@ -47,6 +47,7 @@ or configure the rules individually
 
 ## Rules
 
-Name                         | Description
----------------------------- | -----------
-no-ext-resources-in-stories  | Prevent external resources from being loaded in stories.
+Name                         | Description                                                          | Config
+---------------------------- | -------------------------------------------------------------------- | -----------
+no-csf-v2                    | Use object stories (component story format v3) instead of functions. | strict
+no-ext-resources-in-stories  | Prevent external resources from being loaded in stories.             | recommended
