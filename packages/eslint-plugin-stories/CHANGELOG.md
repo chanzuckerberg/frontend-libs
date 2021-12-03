@@ -2,10 +2,10 @@
 
 ## Unreleased
 
-- [breaking] Remove `no-jest-in-stories`
-- [breaking] Remove `stories-default-export`
-- [fix] Tweak failure message for `no-ext-resources-in-stories`
-- [new] Add `no-csf-v2` rule
+- [breaking] Remove `no-jest-in-stories` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+- [breaking] Remove `stories-default-export` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+- [fix] Tweak failure message for `no-ext-resources-in-stories` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+- [new] Add `no-csf-v2` rule [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
 
 ## 2.0.1 (2021-11-29)
 
