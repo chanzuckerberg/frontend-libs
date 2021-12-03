@@ -6,6 +6,7 @@
 - [breaking] Remove `stories-default-export` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
 - [fix] Tweak failure message for `no-ext-resources-in-stories` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
 - [new] Add `no-csf-v2` rule [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+- [fix] Wrong buld output was published in v3.0.0
 
 ## 2.0.1 (2021-11-29)
 
