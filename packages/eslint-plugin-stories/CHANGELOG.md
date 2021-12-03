@@ -4,6 +4,7 @@
 
 - [breaking] Remove `no-jest-in-stories`
 - [breaking] Remove `stories-default-export`
+- [fix] Tweak failure message for `no-ext-resources-in-stories`
 
 ## 2.0.1 (2021-11-29)
 

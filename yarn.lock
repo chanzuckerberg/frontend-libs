@@ -1552,8 +1552,6 @@ __metadata:
 "@chanzuckerberg/eslint-plugin-stories@workspace:packages/eslint-plugin-stories":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-plugin-stories@workspace:packages/eslint-plugin-stories"
-  dependencies:
-    ts-dedent: ^2.2.0
   languageName: unknown
   linkType: soft
 
@@ -16696,7 +16694,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"ts-dedent@npm:^2.0.0, ts-dedent@npm:^2.2.0":
+"ts-dedent@npm:^2.0.0":
   version: 2.2.0
   resolution: "ts-dedent@npm:2.2.0"
   checksum: 93ed8f7878b6d5ed3c08d99b740010eede6bccfe64bce61c5a4da06a2c17d6ddbb80a8c49c2d15251de7594a4f93ffa21dd10e7be75ef66a4dc9951b4a94e2af

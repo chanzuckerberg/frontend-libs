@@ -1,14 +1,8 @@
 import type { Rule } from 'eslint';
-import { dedent } from 'ts-dedent';
 import isStories from '../utils/isStories';
 
-const failureMessage = dedent`
-  Don't use external resources in stories. These will take time to load and may cause flakiness with Percy.
-
-  For images, use images that are committed to the repo and import directly into the story. Webpack will then convert that 
-  into a data url, and no network request will be made.
-
-`;
+const failureMessage =
+  "Don't use external resources (such as images) in stories, which can cause flakiness in visual regression testing. See https://czi.atlassian.net/wiki/x/0KN1H";
 
 const rule: Rule.RuleModule = {
   create(context) {
