@@ -1,17 +1,17 @@
+import noCSFv2 from './rules/no-csf-v2';
 import noExtResourcesInStories from './rules/no-ext-resources-in-stories';
-import noJestInStories from './rules/no-jest-in-stories';
-import storiesDefaultExport from './rules/stories-default-export';
 
 const rules = {
+  'no-csf-v2': noCSFv2,
   'no-ext-resources-in-stories': noExtResourcesInStories,
-  'no-jest-in-stories': noJestInStories,
-  'stories-default-export': storiesDefaultExport,
 };
 
 const recommendedRules = {
   '@chanzuckerberg/stories/no-ext-resources-in-stories': 'error',
-  '@chanzuckerberg/stories/no-jest-in-stories': 'error',
-  '@chanzuckerberg/stories/stories-default-export': 'error',
+};
+
+const strictRules = {
+  '@chanzuckerberg/stories/no-csf-v2': 'error',
 };
 
 module.exports = {
@@ -19,6 +19,12 @@ module.exports = {
   configs: {
     recommended: {
       rules: recommendedRules,
+    },
+    strict: {
+      rules: {
+        ...recommendedRules,
+        ...strictRules,
+      },
     },
   },
 };

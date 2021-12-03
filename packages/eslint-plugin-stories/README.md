@@ -40,17 +40,14 @@ or configure the rules individually
 // .eslintrc.json
 {
   "rules": {
-    "@chanzuckerberg/stories/no-jest-in-stories": "warn",
-    "@chanzuckerberg/stories/no-top-level-story-args": "warn",
-    "@chanzuckerberg/stories/stories-default-export": "warn"
+    "@chanzuckerberg/stories/no-ext-resources-in-stories": "warn"
   }
 }
 ```
 
 ## Rules
 
-Name                         | Description
----------------------------- | -----------
-no-ext-resources-in-stories  | Prevent external resources from being loaded in stories.
-no-jest-in-stories           | Prevent Jest functions from being used in stories, since they can't run in non-Jest environments.
-stories-default-export       | Enforce that required properties are present in the default export of a stories file.
+Name                         | Description                                                          | Config
+---------------------------- | -------------------------------------------------------------------- | -----------
+no-csf-v2                    | Use object stories (component story format v3) instead of functions. | strict
+no-ext-resources-in-stories  | Prevent external resources from being loaded in stories.             | recommended

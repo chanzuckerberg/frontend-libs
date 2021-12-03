@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- [breaking] Remove `no-jest-in-stories` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+- [breaking] Remove `stories-default-export` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+- [fix] Tweak failure message for `no-ext-resources-in-stories` [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+- [new] Add `no-csf-v2` rule [#22](https://github.com/chanzuckerberg/frontend-libs/pull/22)
+
 ## 2.0.1 (2021-11-29)
 
 - [maintenance] Revert https://github.com/chanzuckerberg/frontend-libs/pull/19 and go back to CommonJS modules (technicalyl this is breaking, but there are no downloads of v3.0.0)
