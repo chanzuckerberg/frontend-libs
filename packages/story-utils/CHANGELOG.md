@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 3.0.2 (2021-12-03)
+
+No updates. Just Lerna being Lerna. Another package was updated.
+
 ## 3.0.1 (2021-11-29)
 
 - [maintenance] Revert https://github.com/chanzuckerberg/frontend-libs/pull/19 and go back to CommonJS modules (technicalyl this is breaking, but there are no downloads of v3.0.0)
