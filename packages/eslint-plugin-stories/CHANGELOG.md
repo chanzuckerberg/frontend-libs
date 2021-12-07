@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [new] Add csf-v3-types rule
+
 ## 3.0.1 (2021-12-03)
 
 - [fix] Wrong buld output was published in v3.0.0
