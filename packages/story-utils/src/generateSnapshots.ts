@@ -53,14 +53,12 @@ export default function generateSnapshots(
     test(`${storyName} story renders snapshot`, async () => {
       const view = render(createElement(Story));
 
-      // When components that include Apollo's useQuery are rendered we need
-      // to await an act that pushes the test to the end of the event loop.
-      // https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/
-      await wait();
-
       // @storybook/testing-react doesn't run play functions automatically (as of v1.0.0). So if
       // one is present, run it before taking a snapshot.
       if (Story.play) {
+        // Ensure the story has fully rendered before running the play function.
+        await wait();
+
         const storyContext = {
           loaded: {},
           abortSignal: new AbortController().signal,
@@ -69,6 +67,13 @@ export default function generateSnapshots(
 
         await Story.play(storyContext);
       }
+
+      // Ensure the story has fully rendered before taking a snapshot. Normally this won't be
+      // necessary, but can be useful for cases where there is async stuff happening, For example,
+      // if waiting on mock network requests to respond.
+      //
+      // Inspired by https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/.
+      await wait();
 
       expect(await getElement(view)).toMatchSnapshot();
     });
