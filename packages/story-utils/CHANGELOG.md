@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Pass the correct `canvasElement` to stories with play functions in `generateSnapshots` - [#25](https://github.com/chanzuckerberg/frontend-libs/pull/25)
+
 ## 3.0.2 (2021-12-03)
 
 No updates. Just Lerna being Lerna. Another package was updated.
