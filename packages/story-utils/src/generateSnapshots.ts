@@ -64,7 +64,7 @@ export default function generateSnapshots(
         const storyContext = {
           loaded: {},
           abortSignal: new AbortController().signal,
-          canvasElement: document.createElement('div'),
+          canvasElement: view.container,
         };
 
         await Story.play(storyContext);
