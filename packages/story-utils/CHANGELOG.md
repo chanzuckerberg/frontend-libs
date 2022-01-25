@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.0.4 (2022-01-25)
+
 - [fix] Wait a bit after running play functions before taking snapshots in `generateSnapshots`, to ensure async things have happened -  - [#26](https://github.com/chanzuckerberg/frontend-libs/pull/26)
 
 ## 3.0.3 (2022-01-25)
