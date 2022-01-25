@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 3.0.2 (2022-01-25)
+
+**Note I made a mistake on the versioning, and this should have been 3.1.0**
+
 - [new] Add csf-v3-types rule
 
 ## 3.0.1 (2021-12-03)

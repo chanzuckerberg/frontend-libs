@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.0.3 (2022-01-25)
+
 - [fix] Pass the correct `canvasElement` to stories with play functions in `generateSnapshots` - [#25](https://github.com/chanzuckerberg/frontend-libs/pull/25)
 
 ## 3.0.2 (2021-12-03)
