@@ -53,6 +53,11 @@ export default function generateSnapshots(
     test(`${storyName} story renders snapshot`, async () => {
       const view = render(createElement(Story));
 
+      // When components that include Apollo's useQuery are rendered we need
+      // to await an act that pushes the test to the end of the event loop.
+      // https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/
+      await wait();
+
       // @storybook/testing-react doesn't run play functions automatically (as of v1.0.0). So if
       // one is present, run it before taking a snapshot.
       if (Story.play) {
@@ -64,11 +69,6 @@ export default function generateSnapshots(
 
         await Story.play(storyContext);
       }
-
-      // When components that include Apollo's useQuery are rendered we need
-      // to await an act that pushes the test to the end of the event loop.
-      // https://trojanowski.dev/apollo-hooks-testing-without-act-warnings/
-      await wait();
 
       expect(await getElement(view)).toMatchSnapshot();
     });
