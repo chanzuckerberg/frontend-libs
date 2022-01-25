@@ -28,9 +28,9 @@
     "react": "*"
   },
   "dependencies": {
-    "@storybook/testing-react": "^1.0.0"
+    "@storybook/testing-react": "^1.2.3"
   },
   "devDependencies": {
-    "@storybook/react": "^6.4.7"
+    "@storybook/react": "^6.4.14"
   }
 }
