@@ -1562,7 +1562,6 @@ __metadata:
     "@storybook/react": ^6.4.22
     "@storybook/testing-react": ^1.2.4
   peerDependencies:
-    "@storybook/react": ">=6.4.0"
     "@testing-library/react": ">=11.0.0"
     react: "*"
   languageName: unknown

@@ -2,9 +2,11 @@
 
 ## Unreleased
 
+- [fix] Fix typing of the stories import file passed to `generateSnapshots` - see https://github.com/chanzuckerberg/edu-design-system/pull/1044/files/d6305f5b156d8dbd7e895af50169cbf3c12aa864#r867242961
+
 ## 3.0.4 (2022-01-25)
 
-- [fix] Wait a bit after running play functions before taking snapshots in `generateSnapshots`, to ensure async things have happened -  - [#26](https://github.com/chanzuckerberg/frontend-libs/pull/26)
+- [fix] Wait a bit after running play functions before taking snapshots in `generateSnapshots`, to ensure async things have happened - [#26](https://github.com/chanzuckerberg/frontend-libs/pull/26)
 
 ## 3.0.3 (2022-01-25)
 

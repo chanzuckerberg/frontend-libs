@@ -1,5 +1,5 @@
-import type { Meta } from '@storybook/react';
 import { composeStories, composeStory } from '@storybook/testing-react';
+import type { StoryFile } from '@storybook/testing-react/dist/types';
 import { render, RenderResult } from '@testing-library/react';
 import { createElement } from 'react';
 import wait from './wait';
@@ -11,18 +11,6 @@ type TestOptions = {
   getElement?: (
     wrapper: RenderResult,
   ) => Promise<ChildNode | null> | ChildNode | null;
-};
-
-/**
- * Type for the star import of a stories file. For example:
- *
- *   import * as stories from './foo.stories.tsx';
- *
- * Technically there will also be stories themselves on the import, but there doesn't seem to be a
- * good way to type those.
- */
-type StoriesImport = {
-  default: Meta;
 };
 
 /**
@@ -42,7 +30,7 @@ type ComposedStory = ReturnType<typeof composeStory>;
  * generateSnapshots(stories);
  */
 export default function generateSnapshots(
-  storiesImport: StoriesImport,
+  storiesImport: StoryFile,
   { getElement = (wrapper) => wrapper.container.firstChild }: TestOptions = {},
 ): void {
   const stories = composeStories(storiesImport);

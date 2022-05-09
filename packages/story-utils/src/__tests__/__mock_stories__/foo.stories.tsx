@@ -1,20 +1,25 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import React from 'react';
+
+function Foo() {
+  return <div>hi</div>;
+}
 
 export default {
   title: 'Foo',
-  component: () => 'foo',
-  parameters: {
-    axe: {
-      rules: ['color-contrast'],
-    },
-  },
+  component: Foo,
 };
 
-export const FooStory1 = () => 'foo story 1';
-FooStory1.parameters = {
-  axe: {
+export const FooStory1 = () => <Foo />;
+
+export const FooStory2 = () => (
+  <div>
+    <Foo />
+    <span>2</span>
+  </div>
+);
+FooStory2.parameters = {
+  snapshot: {
     skip: true,
   },
 };
-
-export const FooStory2 = () => 'foo story 2';

@@ -3,9 +3,9 @@
  */
 
 import generateSnapshots from '../generateSnapshots';
-import * as snapshotTestStoryFile from './__mock_stories__/bar.stories';
+import * as stories from './__mock_stories__/foo.stories';
 
 // We should see snapshots in the subdirectory
 describe('auto generate snapshots for bar', () => {
-  generateSnapshots(snapshotTestStoryFile);
+  generateSnapshots(stories);
 });
