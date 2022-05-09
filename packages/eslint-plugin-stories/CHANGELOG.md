@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 3.1.1 (2022-05-09)
+
+- Dependencies updated
+
 ## 3.1.0 (2022-01-25)
 
 **Same changelog entry as v3.0.2. I mistakenly published that version, and republished as the correct one - v3.1.0.**
