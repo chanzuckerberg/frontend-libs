@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import React from 'react';
-
 function Foo() {
   return <div>hi</div>;
 }
