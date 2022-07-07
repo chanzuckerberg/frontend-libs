@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [new] Add `csf-object-literal-or-function` rule [#27](https://github.com/chanzuckerberg/frontend-libs/pull/27)
+
 ## 3.1.1 (2022-05-09)
 
 - Dependencies updated

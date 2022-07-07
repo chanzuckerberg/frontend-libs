@@ -47,8 +47,9 @@ or configure the rules individually
 
 ## Rules
 
-Name                         | Description                                                                                                | Config
----------------------------- | ---------------------------------------------------------------------------------------------------------- | -----------
-csf-v3-types                 | Enforce component story format (CSF) v3 stories have explicit TypeScript types where needed for inferrence | strict
-no-csf-v2                    | Use object stories (component story format v3) instead of functions.                                       | strict
-no-ext-resources-in-stories  | Prevent external resources from being loaded in stories.                                                   | recommended
+Name                           | Description                                                                                                | Config
+------------------------------ | ---------------------------------------------------------------------------------------------------------- | -----------
+csf-object-literal-or-function | Enforce that stories are either an object literal or function.                                             | recommended
+csf-v3-types                   | Enforce component story format (CSF) v3 stories have explicit TypeScript types where needed for inferrence | strict
+no-csf-v2                      | Use object stories (component story format v3) instead of functions.                                       | strict
+no-ext-resources-in-stories    | Prevent external resources from being loaded in stories.                                                   | recommended
