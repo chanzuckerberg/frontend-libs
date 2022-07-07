@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Fix error preventing the csf-object-literal-or-function rule from being found
+
 ## 3.2.0 (2022-07-07)
 
 - [new] Add `csf-object-literal-or-function` rule [#27](https://github.com/chanzuckerberg/frontend-libs/pull/27)

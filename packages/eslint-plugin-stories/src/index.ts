@@ -1,8 +1,10 @@
+import csfObjectLiteralOrFunction from './rules/csf-object-literal-or-function';
 import csfV3Types from './rules/csf-v3-types';
 import noCSFv2 from './rules/no-csf-v2';
 import noExtResourcesInStories from './rules/no-ext-resources-in-stories';
 
 const rules = {
+  'csf-object-literal-or-function': csfObjectLiteralOrFunction,
   'csf-v3-types': csfV3Types,
   'no-csf-v2': noCSFv2,
   'no-ext-resources-in-stories': noExtResourcesInStories,
