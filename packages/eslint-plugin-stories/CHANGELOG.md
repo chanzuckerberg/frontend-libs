@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 3.2.2 (2022-07-07)
+
+- [fix] Handle `Template.bind(null)` case in csf-object-literal-or-function [#28](https://github.com/chanzuckerberg/frontend-libs/pull/28)
+
 ## 3.2.1 (2022-07-07)
 
 - [fix] Fix error preventing the csf-object-literal-or-function rule from being found
