@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 3.0.6 (2022-07-07)
+
+- [fix] Update dependencies
+
 ## 3.0.5 (2022-05-09)
 
 - [fix] Fix typing of the stories import file passed to `generateSnapshots` - see https://github.com/chanzuckerberg/edu-design-system/pull/1044/files/d6305f5b156d8dbd7e895af50169cbf3c12aa864#r867242961
