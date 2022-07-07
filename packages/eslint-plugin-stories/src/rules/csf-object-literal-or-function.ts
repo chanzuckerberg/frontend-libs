@@ -52,7 +52,10 @@ const rule: Rule.RuleModule = {
         // CSF v3 allows story object
         const isObjectLiteral = expression.type === 'ObjectExpression';
 
-        if (!isFunction && !isObjectLiteral) {
+        // allow for Template.bind(null)
+        const isCallExpression = expression.type === 'CallExpression';
+
+        if (!isFunction && !isObjectLiteral && !isCallExpression) {
           context.report({
             node,
             message: failureMessage,
