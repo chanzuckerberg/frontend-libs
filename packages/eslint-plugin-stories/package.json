@@ -24,6 +24,6 @@
     "build"
   ],
   "devDependencies": {
-    "@typescript-eslint/experimental-utils": "^5.23.0"
+    "@typescript-eslint/experimental-utils": "^5.30.5"
   }
 }
