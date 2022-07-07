@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.2.1 (2022-07-07)
+
 - [fix] Fix error preventing the csf-object-literal-or-function rule from being found
 
 ## 3.2.0 (2022-07-07)

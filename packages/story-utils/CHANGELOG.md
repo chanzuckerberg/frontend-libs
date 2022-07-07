@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 3.0.7 (2022-07-07)
+
+No updates. Another package was updated. Is there a way to prevent Lerna from publishing new versions just because another package changed?
+
 ## 3.0.6 (2022-07-07)
 
 - [fix] Update dependencies
