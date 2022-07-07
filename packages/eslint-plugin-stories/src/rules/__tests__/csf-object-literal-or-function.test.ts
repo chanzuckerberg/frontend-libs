@@ -32,7 +32,14 @@ ruleTester.run('no-csf-v2', rule, {
       code: `
         export const Default = {};
       `,
-      filename: 'src/components/Button/Button.tsx',
+      filename: 'src/components/Button/Button.stories.tsx',
+    },
+    {
+      // allow for Template.bind
+      code: `
+        export const Default = Template.bind(null);
+      `,
+      filename: 'src/components/Button/Button.stories.tsx',
     },
   ],
   invalid: [
