@@ -15,6 +15,7 @@ const rules = {
 const recommendedRules = {
   '@chanzuckerberg/stories/no-ext-resources-in-stories': 'error',
   '@chanzuckerberg/stories/csf-object-literal-or-function': 'error',
+  '@chanzuckerberg/stories/no-new-components-without-story': 'error',
 };
 
 const strictRules = {
