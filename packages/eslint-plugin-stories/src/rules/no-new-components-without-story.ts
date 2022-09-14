@@ -1,5 +1,6 @@
-const fs = require('fs');
+import fs from 'fs';
 import type { Rule } from 'eslint';
+import isStories from '../utils/isStories';
 
 const failureMessage = `
   React Components must have a corresponding Storybook story.
@@ -21,7 +22,7 @@ const rule: Rule.RuleModule = {
         const filename = context.getFilename();
         const isComponent =
           filename.match('.tsx') &&
-          !filename.match('.stories.') &&
+          !isStories(filename) &&
           !filename.match('.spec.');
 
         if (!isComponent) {

@@ -8,7 +8,7 @@ const ruleTester = new RuleTester({
   },
 });
 
-ruleTester.run('no-mock-db-outside-handler', rule, {
+ruleTester.run('no-new-components-without-story', rule, {
   valid: [
     {
       name: 'a story file',
@@ -29,6 +29,12 @@ ruleTester.run('no-mock-db-outside-handler', rule, {
       name: 'a tsx file without exports',
       code: 'foo',
       filename: 'foo.tsx',
+    },
+    {
+      name: 'a tsx file with exports',
+      code: 'export default {}',
+      filename:
+        'packages/eslint-plugin-stories/src/rules/__tests__/testComponent.tsx',
     },
   ],
   invalid: [
