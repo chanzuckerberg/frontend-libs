@@ -1,5 +1,5 @@
 import { RuleTester } from 'eslint';
-import rule from '../no-new-components-without-story';
+import rule from '../no-components-without-story';
 
 const ruleTester = new RuleTester({
   parserOptions: {
@@ -8,7 +8,7 @@ const ruleTester = new RuleTester({
   },
 });
 
-ruleTester.run('no-new-components-without-story', rule, {
+ruleTester.run('no-components-without-story', rule, {
   valid: [
     {
       name: 'a story file',
@@ -34,7 +34,7 @@ ruleTester.run('no-new-components-without-story', rule, {
       name: 'a tsx file with exports',
       code: 'export default {}',
       filename:
-        'packages/eslint-plugin-stories/src/rules/__tests__/testComponent.tsx',
+        'packages/eslint-plugin-stories/src/rules/__tests__/noComponentsWithoutStoryTestComponent.tsx',
     },
   ],
   invalid: [
