@@ -1,8 +1,8 @@
 import csfObjectLiteralOrFunction from './rules/csf-object-literal-or-function';
 import csfV3Types from './rules/csf-v3-types';
+import noNewComponentsWithoutStory from './rules/no-components-without-story';
 import noCSFv2 from './rules/no-csf-v2';
 import noExtResourcesInStories from './rules/no-ext-resources-in-stories';
-import noNewComponentsWithoutStory from './rules/no-components-without-story';
 
 const rules = {
   'csf-object-literal-or-function': csfObjectLiteralOrFunction,
