@@ -16,7 +16,7 @@ yarn add --dev @chanzuckerberg/eslint-plugin-stories
 
 Add @chanzuckerberg/stories as a plugin in your eslint configuration file.
 
-```json
+```jsonc
 // .eslintrc.json
 {
   "plugins": ["@chanzuckerberg/stories"]
@@ -25,7 +25,7 @@ Add @chanzuckerberg/stories as a plugin in your eslint configuration file.
 
 Then you can either extend the recommended config to turn on all the rules
 
-```json
+```jsonc
 // .eslintrc.json
 {
   "extends": ["plugin:@chanzuckerberg/stories/recommended"]
@@ -34,7 +34,7 @@ Then you can either extend the recommended config to turn on all the rules
 
 or configure the rules individually
 
-```json
+```jsonc
 // .eslintrc.json
 {
   "rules": {
