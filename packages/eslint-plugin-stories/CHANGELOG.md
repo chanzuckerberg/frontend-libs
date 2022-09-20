@@ -4,6 +4,10 @@
 
 ## 3.2.2 (2022-07-07)
 
+- [new] Add `no-components-without-story` rule [#29](https://github.com/chanzuckerberg/frontend-libs/pull/29)
+
+## 3.2.2 (2022-07-07)
+
 - [fix] Handle `Template.bind(null)` case in csf-object-literal-or-function [#28](https://github.com/chanzuckerberg/frontend-libs/pull/28)
 
 ## 3.2.1 (2022-07-07)
