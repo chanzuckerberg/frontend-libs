@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## 3.2.2 (2022-07-07)
+## 3.2.3 (2022-09-20)
 
 - [new] Add `no-components-without-story` rule [#29](https://github.com/chanzuckerberg/frontend-libs/pull/29)
 
