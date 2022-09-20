@@ -15,12 +15,12 @@ const rules = {
 const recommendedRules = {
   '@chanzuckerberg/stories/no-ext-resources-in-stories': 'error',
   '@chanzuckerberg/stories/csf-object-literal-or-function': 'error',
-  '@chanzuckerberg/stories/no-components-without-story': 'error',
 };
 
 const strictRules = {
   '@chanzuckerberg/stories/csf-v3-types': 'error',
   '@chanzuckerberg/stories/no-csf-v2': 'error',
+  '@chanzuckerberg/stories/no-components-without-story': 'error',
 };
 
 module.exports = {
