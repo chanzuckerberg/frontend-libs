@@ -51,4 +51,4 @@ or configure the rules individually
 | csf-v3-types                   | Enforce component story format (CSF) v3 stories have explicit TypeScript types where needed for inferrence | strict      |
 | no-csf-v2                      | Use object stories (component story format v3) instead of functions.                                       | strict      |
 | no-ext-resources-in-stories    | Prevent external resources from being loaded in stories.                                                   | recommended |
-| no-components-without-story    | Enforce that new components are created with a corresponding story                                         | recommended |
+| no-components-without-story    | Enforce that new components are created with a corresponding story                                         | strict      |
