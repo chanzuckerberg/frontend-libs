@@ -1583,6 +1583,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js":
+  version: 0.0.0-use.local
+  resolution: "@chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js"
+  dependencies:
+    eslint-plugin-import: ^2.26.0
+  peerDependencies:
+    eslint: ">= 8"
+  languageName: unknown
+  linkType: soft
+
 "@chanzuckerberg/eslint-plugin-stories@workspace:packages/eslint-plugin-stories":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-plugin-stories@workspace:packages/eslint-plugin-stories"

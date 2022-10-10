@@ -22,6 +22,7 @@ All packages are published separately as NPM packages, and should be installed a
 
 ## Packages
 
+- [eslint-config-edu-js](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/eslint-config-edu-js)
 - [eslint-plugin-stories](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/eslint-plugin-stories)
 - [prettier-config-edu](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/prettier-config-edu)
 - [story-utils](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/story-utils)
