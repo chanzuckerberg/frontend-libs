@@ -7,13 +7,6 @@ module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
 
-  globals: {
-    'ts-jest': {
-      // Workaround for https://github.com/kulshekhar/ts-jest/issues/1648.
-      tsconfig: 'tsconfig.base.json',
-    },
-  },
-
   // Pre-process TypeScript files with ts-jest.
   preset: 'ts-jest',
 
@@ -27,4 +20,14 @@ module.exports = {
   // `spec` or `test` in the filename. This allows us to put util files inside __tests__ directories
   // without jest thinking they're tests that should be ran.
   testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
+
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        // Workaround for https://github.com/kulshekhar/ts-jest/issues/1648.
+        tsconfig: 'tsconfig.base.json',
+      },
+    ],
+  },
 };

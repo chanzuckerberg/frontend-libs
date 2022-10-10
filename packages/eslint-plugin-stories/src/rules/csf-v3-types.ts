@@ -26,6 +26,7 @@ const failureMessages = {
  * render function defined that takes args (as in the examples above).
  */
 const rule: TSESLint.RuleModule<keyof typeof failureMessages> = {
+  defaultOptions: [],
   meta: {
     messages: failureMessages,
     type: 'suggestion',
