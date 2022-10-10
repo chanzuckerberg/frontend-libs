@@ -21,6 +21,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@chanzuckerberg/eslint-config-edu-js": "workspace:*",
+    "@chanzuckerberg/eslint-config-edu-ts": "workspace:*",
+    "@chanzuckerberg/prettier-config-edu": "workspace:*",
     "@octokit/core": "^3.6.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
