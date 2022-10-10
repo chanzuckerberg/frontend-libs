@@ -1,4 +1,4 @@
-import { RuleTester } from 'eslint';
+import {RuleTester} from 'eslint';
 import rule from '../no-components-without-story';
 
 const ruleTester = new RuleTester({
@@ -42,7 +42,7 @@ ruleTester.run('no-components-without-story', rule, {
       name: 'a lone component file',
       code: 'export default {}',
       filename: 'foo.tsx',
-      errors: [{ type: 'ExportDefaultDeclaration' }],
+      errors: [{type: 'ExportDefaultDeclaration'}],
     },
   ],
 });

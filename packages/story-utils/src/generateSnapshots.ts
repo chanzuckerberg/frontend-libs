@@ -1,7 +1,9 @@
-import { composeStories, composeStory } from '@storybook/testing-react';
-import type { StoryFile } from '@storybook/testing-react/dist/types';
-import { render, RenderResult } from '@testing-library/react';
-import { createElement } from 'react';
+import type {composeStory} from '@storybook/testing-react';
+import {composeStories} from '@storybook/testing-react';
+import type {StoryFile} from '@storybook/testing-react/dist/types';
+import type {RenderResult} from '@testing-library/react';
+import {render} from '@testing-library/react';
+import {createElement} from 'react';
 import wait from './wait';
 
 type TestOptions = {
@@ -31,7 +33,7 @@ type ComposedStory = ReturnType<typeof composeStory>;
  */
 export default function generateSnapshots(
   storiesImport: StoryFile,
-  { getElement = (wrapper) => wrapper.container.firstChild }: TestOptions = {},
+  {getElement = (wrapper) => wrapper.container.firstChild}: TestOptions = {},
 ): void {
   const stories = composeStories(storiesImport);
 
