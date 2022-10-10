@@ -44,7 +44,6 @@ module.exports = {
         '*.spec.[jt]sx',
         '*.test.[jt]s',
         '*.test.[jt]sx',
-        '*__mocks__/*',
         '*__tests__/*',
       ],
       rules: {
