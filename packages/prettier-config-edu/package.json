@@ -1,0 +1,27 @@
+{
+  "name": "@chanzuckerberg/prettier-config-edu",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanzuckerberg/frontend-libs"
+  },
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/prettier-config-edu",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.1.13"
+  },
+  "peerDependencies": {
+    "prettier": ">= 2"
+  }
+}
