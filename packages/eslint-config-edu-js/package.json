@@ -1,0 +1,27 @@
+{
+  "name": "@chanzuckerberg/eslint-config-edu-js",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanzuckerberg/frontend-libs"
+  },
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-config-edu-js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8"
+  }
+}

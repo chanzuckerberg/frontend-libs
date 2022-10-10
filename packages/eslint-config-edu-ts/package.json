@@ -1,0 +1,31 @@
+{
+  "name": "@chanzuckerberg/eslint-config-edu-ts",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanzuckerberg/frontend-libs"
+  },
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-config-edu-ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8"
+  }
+}
