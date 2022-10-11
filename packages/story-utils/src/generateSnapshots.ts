@@ -1,8 +1,6 @@
-import type {composeStory} from '@storybook/testing-react';
-import {composeStories} from '@storybook/testing-react';
+import {composeStories, type composeStory} from '@storybook/testing-react';
 import type {StoryFile} from '@storybook/testing-react/dist/types';
-import type {RenderResult} from '@testing-library/react';
-import {render} from '@testing-library/react';
+import {render, type RenderResult} from '@testing-library/react';
 import {createElement} from 'react';
 import wait from './wait';
 
