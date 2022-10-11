@@ -4,8 +4,6 @@ import rule from '../use-effect-deps-presence';
 const ruleTester = new RuleTester({
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {jsx: true},
   },
 });
 
