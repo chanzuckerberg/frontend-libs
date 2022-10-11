@@ -6,7 +6,12 @@ const rules = {
 
 const recommendedConfig = {
   extends: ['plugin:jsx-a11y/recommended'],
-  plugins: ['jsx-a11y', 'react', 'react-hooks'],
+  plugins: [
+    '@chanzuckerberg/eslint-plugin-edu-react',
+    'jsx-a11y',
+    'react',
+    'react-hooks',
+  ],
   settings: {
     react: {
       version: 'detect',
