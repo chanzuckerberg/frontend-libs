@@ -6,12 +6,7 @@ const rules = {
 
 const recommendedConfig = {
   extends: ['plugin:jsx-a11y/recommended'],
-  plugins: [
-    '@chanzuckerberg/eslint-plugin-edu-react',
-    'jsx-a11y',
-    'react',
-    'react-hooks',
-  ],
+  plugins: ['@chanzuckerberg/edu-react', 'jsx-a11y', 'react', 'react-hooks'],
   settings: {
     react: {
       version: 'detect',
@@ -19,8 +14,9 @@ const recommendedConfig = {
   },
   rules: {
     // prettier-ignore
-    '@chanzuckerberg/eslint-plugin-edu-react/use-effect-deps-presence': 'warn',
-    'jsx-a11y/anchor-ambiguous-text': 'error',
+    '@chanzuckerberg/edu-react/use-effect-deps-presence': 'warn',
+    // TODO: Turn this rule on when it's released. It's not present in v6.6.1.
+    'jsx-a11y/anchor-ambiguous-text': 'off',
     // Enforce files with JSX are named wither .jsx or .tsx. This makes it easier for us to do
     // analysis on codebases (since we can find React components by looking at file extensions).
     'react/jsx-filename-extension': [
@@ -48,7 +44,7 @@ const recommendedConfig = {
   },
 };
 
-export default {
+module.exports = {
   rules,
   configs: {
     recommended: recommendedConfig,
