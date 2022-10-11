@@ -14,7 +14,7 @@ const recommendedConfig = {
   },
   rules: {
     // prettier-ignore
-    '@chanzuckerberg/edu-react/use-effect-deps-presence': 'warn',
+    '@chanzuckerberg/edu-react/use-effect-deps-presence': 'error',
     // TODO: Turn this rule on when it's released. It's not present in v6.6.1.
     'jsx-a11y/anchor-ambiguous-text': 'off',
     // Enforce files with JSX are named wither .jsx or .tsx. This makes it easier for us to do
