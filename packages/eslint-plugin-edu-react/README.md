@@ -28,3 +28,11 @@ Extend this package's config in your [ESLint configuration file](https: //eslint
   ]
 }
 ```
+
+## Custom rules
+
+The recommended config includes some custom rules (among others).
+
+| Name                     | Description                                                                             | Config      |
+| ------------------------ | --------------------------------------------------------------------------------------- | ----------- |
+| use-effect-deps-presence | Require deps arrays with `useEffect`. There are valid reasons to not have a deps array, in which case this rule can be suppressed or disabled. | recommended |

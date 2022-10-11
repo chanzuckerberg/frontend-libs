@@ -1,3 +1,9 @@
+import useEffectDepsPresence from './rules/use-effect-deps-presence';
+
+const rules = {
+  'use-effect-deps-presence': useEffectDepsPresence,
+};
+
 const recommendedConfig = {
   extends: ['plugin:jsx-a11y/recommended'],
   plugins: ['jsx-a11y', 'react', 'react-hooks'],
@@ -7,6 +13,7 @@ const recommendedConfig = {
     },
   },
   rules: {
+    '@chanzuckerberg/eslint-plugin-edu-react/use-effect-deps-presence': 'error',
     'jsx-a11y/anchor-ambiguous-text': 'error',
     // Enforce files with JSX are named wither .jsx or .tsx. This makes it easier for us to do
     // analysis on codebases (since we can find React components by looking at file extensions).
@@ -36,6 +43,7 @@ const recommendedConfig = {
 };
 
 export default {
+  rules,
   configs: {
     recommended: recommendedConfig,
   },
