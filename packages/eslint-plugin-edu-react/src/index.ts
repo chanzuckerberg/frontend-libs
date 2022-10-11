@@ -1,4 +1,4 @@
-module.exports = {
+const recommendedConfig = {
   extends: ['plugin:jsx-a11y/recommended'],
   plugins: ['jsx-a11y', 'react', 'react-hooks'],
   settings: {
@@ -32,5 +32,11 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+  },
+};
+
+export default {
+  configs: {
+    recommended: recommendedConfig,
   },
 };

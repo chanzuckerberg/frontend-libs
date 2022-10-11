@@ -1,6 +1,6 @@
-# @chanzuckerberg/eslint-config-edu-react
+# @chanzuckerberg/eslint-plugin-edu-react
 
-Shared React [ESLint](https://eslint.org/) config for CZI's Education initiative.
+Shared React [ESLint](https://eslint.org/) plugin and config for CZI's Education initiative.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ Shared React [ESLint](https://eslint.org/) config for CZI's Education initiative
 Install by running
 
 ```sh
-yarn add --dev @chanzuckerberg/eslint-config-edu-react
+yarn add --dev @chanzuckerberg/eslint-plugin-edu-react
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ Extend this package's config in your [ESLint configuration file](https: //eslint
 // .eslintrc
 {
   "extends": [
-    "@chanzuckerberg/eslint-config-edu-react"
+    "plugin:@chanzuckerberg/eslint-plugin-edu-react/recommended"
   ]
 }
 ```

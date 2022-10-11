@@ -1603,18 +1603,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@chanzuckerberg/eslint-config-edu-react@workspace:packages/eslint-config-edu-react":
-  version: 0.0.0-use.local
-  resolution: "@chanzuckerberg/eslint-config-edu-react@workspace:packages/eslint-config-edu-react"
-  dependencies:
-    eslint-plugin-jsx-a11y: ^6.6.1
-    eslint-plugin-react: ^7.31.8
-    eslint-plugin-react-hooks: ^4.6.0
-  peerDependencies:
-    eslint: ">= 8"
-  languageName: unknown
-  linkType: soft
-
 "@chanzuckerberg/eslint-config-edu-ts@workspace:*, @chanzuckerberg/eslint-config-edu-ts@workspace:packages/eslint-config-edu-ts":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-config-edu-ts@workspace:packages/eslint-config-edu-ts"
@@ -1623,6 +1611,18 @@ __metadata:
     "@typescript-eslint/parser": ^5.38.1
     eslint-import-resolver-typescript: ^3.5.1
     eslint-plugin-import: ^2.26.0
+  peerDependencies:
+    eslint: ">= 8"
+  languageName: unknown
+  linkType: soft
+
+"@chanzuckerberg/eslint-plugin-edu-react@workspace:packages/eslint-plugin-edu-react":
+  version: 0.0.0-use.local
+  resolution: "@chanzuckerberg/eslint-plugin-edu-react@workspace:packages/eslint-plugin-edu-react"
+  dependencies:
+    eslint-plugin-jsx-a11y: ^6.6.1
+    eslint-plugin-react: ^7.31.8
+    eslint-plugin-react-hooks: ^4.6.0
   peerDependencies:
     eslint: ">= 8"
   languageName: unknown
