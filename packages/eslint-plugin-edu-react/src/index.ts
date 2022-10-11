@@ -13,7 +13,8 @@ const recommendedConfig = {
     },
   },
   rules: {
-    '@chanzuckerberg/eslint-plugin-edu-react/use-effect-deps-presence': 'error',
+    // prettier-ignore
+    '@chanzuckerberg/eslint-plugin-edu-react/use-effect-deps-presence': 'warn',
     'jsx-a11y/anchor-ambiguous-text': 'error',
     // Enforce files with JSX are named wither .jsx or .tsx. This makes it easier for us to do
     // analysis on codebases (since we can find React components by looking at file extensions).
