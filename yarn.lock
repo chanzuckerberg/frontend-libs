@@ -1593,7 +1593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js":
+"@chanzuckerberg/eslint-config-edu-js@workspace:*, @chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js"
   dependencies:
@@ -1615,7 +1615,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@chanzuckerberg/eslint-config-edu-ts@workspace:packages/eslint-config-edu-ts":
+"@chanzuckerberg/eslint-config-edu-ts@workspace:*, @chanzuckerberg/eslint-config-edu-ts@workspace:packages/eslint-config-edu-ts":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-config-edu-ts@workspace:packages/eslint-config-edu-ts"
   dependencies:
@@ -1636,7 +1636,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@chanzuckerberg/prettier-config-edu@workspace:packages/prettier-config-edu":
+"@chanzuckerberg/prettier-config-edu@workspace:*, @chanzuckerberg/prettier-config-edu@workspace:packages/prettier-config-edu":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/prettier-config-edu@workspace:packages/prettier-config-edu"
   dependencies:
@@ -9685,6 +9685,9 @@ __metadata:
   resolution: "frontend-libs@workspace:."
   dependencies:
     "@babel/core": ^7.19.3
+    "@chanzuckerberg/eslint-config-edu-js": "workspace:*"
+    "@chanzuckerberg/eslint-config-edu-ts": "workspace:*"
+    "@chanzuckerberg/prettier-config-edu": "workspace:*"
     "@octokit/core": ^3.6.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0

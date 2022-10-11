@@ -1,4 +1,4 @@
-import { RuleTester } from 'eslint';
+import {RuleTester} from 'eslint';
 import rule from '../no-ext-resources-in-stories';
 
 const ruleTester = new RuleTester({
@@ -25,7 +25,7 @@ ruleTester.run('no-ext-resources-in-stories', rule, {
         export const IMAGE = "http://google.com/image.png";
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'Literal' }],
+      errors: [{type: 'Literal'}],
     },
     {
       // Contains jpg in string.
@@ -33,7 +33,7 @@ ruleTester.run('no-ext-resources-in-stories', rule, {
         export const IMAGE = "http://google.com/image.jpg";
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'Literal' }],
+      errors: [{type: 'Literal'}],
     },
     {
       // Contains jpeg in string.
@@ -41,7 +41,7 @@ ruleTester.run('no-ext-resources-in-stories', rule, {
         export const IMAGE = "http://google.com/image.jpeg";
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'Literal' }],
+      errors: [{type: 'Literal'}],
     },
   ],
 });

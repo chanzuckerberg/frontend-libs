@@ -16,7 +16,7 @@ module.exports = {
     // and other tools don't need to figure out if they should be removed or not.
     '@typescript-eslint/consistent-type-imports': [
       'error',
-      { prefer: 'type-imports' },
+      {prefer: 'type-imports'},
     ],
     // Leave it up to the programmer to determine if a module export should have explicit types or
     // inferred ones.
@@ -27,7 +27,7 @@ module.exports = {
     // from the ...rest.
     '@typescript-eslint/no-unused-vars': [
       'error',
-      { args: 'none', ignoreRestSiblings: true },
+      {args: 'none', ignoreRestSiblings: true},
     ],
   },
   overrides: [

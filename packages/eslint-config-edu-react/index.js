@@ -12,15 +12,15 @@ module.exports = {
     // analysis on codebases (since we can find React components by looking at file extensions).
     'react/jsx-filename-extension': [
       'error',
-      { allow: 'as-needed', extensions: ['.jsx', '.tsx'] },
+      {allow: 'as-needed', extensions: ['.jsx', '.tsx']},
     ],
     'react/jsx-key': 'error',
     'react/jsx-no-undef': 'error',
     // Don't allow fragments with only a single child. The fragment isn't necessary in that case.
     // The only exception to this is a single expression (e.g. `<>{children}</>`), which is useful
     // when using TypeScript to convert a ReactNode to a ReactElement.
-    'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
-    'react/jsx-sort-props': ['error', { ignoreCase: true }],
+    'react/jsx-no-useless-fragment': ['error', {allowExpressions: true}],
+    'react/jsx-sort-props': ['error', {ignoreCase: true}],
     'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
     'react/no-array-index-key': 'error',

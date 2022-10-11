@@ -1,4 +1,4 @@
-import type { TSESLint, TSESTree } from '@typescript-eslint/experimental-utils';
+import type {TSESLint, TSESTree} from '@typescript-eslint/experimental-utils';
 import isStories from '../utils/isStories';
 
 const failureMessages = {
@@ -45,7 +45,7 @@ const rule: TSESLint.RuleModule<keyof typeof failureMessages> = {
 
         if (story?.definitelyTakesArgs) {
           if (!story.typeAnnotation) {
-            context.report({ node, messageId: 'specifyType' });
+            context.report({node, messageId: 'specifyType'});
           }
         }
       },

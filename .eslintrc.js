@@ -6,23 +6,18 @@ module.exports = {
     node: true,
   },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
+    '@chanzuckerberg/eslint-config-edu-js',
+    '@chanzuckerberg/eslint-config-edu-ts',
     'plugin:import/warnings',
-    'plugin:import/typescript',
     'plugin:prettier/recommended',
     'plugin:testing-library/react',
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
-  },
   ignorePatterns: ['storybook-static/', 'build/'],
-  plugins: ['@typescript-eslint', 'testing-library', 'import', 'jest'],
+  plugins: ['testing-library', 'jest'],
   rules: {
-    '@typescript-eslint/no-empty-function': 'off',
-    'import/order': ['error', { alphabetize: { order: 'asc' } }],
+    // This lint rule is extremely useful, but does not seem to work in this repo... not sure why 😬
+    // Is it because of the monorepo structure, and eslint can't tell that dev deps at the top level
+    // should be importable by packages?
+    'import/no-extraneous-dependencies': 'off',
   },
 };

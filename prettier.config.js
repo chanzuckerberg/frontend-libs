@@ -1,7 +1,1 @@
-module.exports = {
-  endOfLine: 'lf',
-  semi: true,
-  singleQuote: true,
-  tabWidth: 2,
-  trailingComma: 'all',
-};
+module.exports = require('@chanzuckerberg/prettier-config-edu');

@@ -1,4 +1,4 @@
-import { RuleTester } from 'eslint';
+import {RuleTester} from 'eslint';
 import rule from '../no-csf-v2';
 
 const ruleTester = new RuleTester({
@@ -34,7 +34,7 @@ ruleTester.run('no-csf-v2', rule, {
         export const Primary = () => {};
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'ExportNamedDeclaration' }],
+      errors: [{type: 'ExportNamedDeclaration'}],
     },
     {
       // Function expression.
@@ -42,7 +42,7 @@ ruleTester.run('no-csf-v2', rule, {
         export const Primary = function () {};
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'ExportNamedDeclaration' }],
+      errors: [{type: 'ExportNamedDeclaration'}],
     },
     {
       // Function declaration.
@@ -50,7 +50,7 @@ ruleTester.run('no-csf-v2', rule, {
         export function Primary() {}
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'ExportNamedDeclaration' }],
+      errors: [{type: 'ExportNamedDeclaration'}],
     },
   ],
 });

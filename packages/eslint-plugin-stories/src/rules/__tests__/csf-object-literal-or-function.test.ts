@@ -1,11 +1,11 @@
-import { RuleTester } from 'eslint';
+import {RuleTester} from 'eslint';
 import rule from '../csf-object-literal-or-function';
 
 const ruleTester = new RuleTester({
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
-    ecmaFeatures: { jsx: true },
+    ecmaFeatures: {jsx: true},
   },
 });
 
@@ -49,7 +49,7 @@ ruleTester.run('no-csf-v2', rule, {
         export const Default = <Component />;
       `,
       filename: 'src/components/Button/Button.stories.tsx',
-      errors: [{ type: 'ExportNamedDeclaration' }],
+      errors: [{type: 'ExportNamedDeclaration'}],
     },
   ],
 });
