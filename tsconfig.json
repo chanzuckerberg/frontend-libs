@@ -2,6 +2,9 @@
   "files": [],
   "references": [
     {
+      "path": "packages/eslint-plugin-edu-react"
+    },
+    {
       "path": "packages/eslint-plugin-stories"
     },
     {

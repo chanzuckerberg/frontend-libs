@@ -1,23 +1,23 @@
 {
-  "name": "@chanzuckerberg/eslint-config-edu-react",
+  "name": "@chanzuckerberg/eslint-plugin-edu-react",
   "version": "0.0.1",
   "license": "MIT",
   "keywords": [
     "eslint",
-    "eslint-config",
+    "eslint-plugin",
     "react"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/chanzuckerberg/frontend-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-config-edu-react",
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-plugin-edu-react",
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
+  "main": "build/index.js",
   "files": [
-    "index.js"
+    "build"
   ],
   "dependencies": {
     "eslint-plugin-jsx-a11y": "^6.6.1",
