@@ -3,7 +3,7 @@ module.exports = {
   reportUnusedDisableDirectives: true,
   rules: {
     'array-bracket-spacing': ['error', 'never'],
-    'arrow-parens': ['error', 'as-needed'],
+    'arrow-parens': ['error', 'always'],
     'comma-dangle': ['error', 'always-multiline'],
     curly: 'error',
     eqeqeq: ['error', 'allow-null'],
