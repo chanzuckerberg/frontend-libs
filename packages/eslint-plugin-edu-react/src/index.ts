@@ -35,6 +35,7 @@ const recommendedConfig = {
     'react/no-array-index-key': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-string-refs': 'error',
+    'react/prop-types': 'off',
     // Don't enforce importing React just to use JSX. As of React 17 this is no longer needed.
     // See https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html. You do still
     // need to import React to use its hooks and types.
