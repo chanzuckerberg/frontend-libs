@@ -1,6 +1,8 @@
+import noUselessKey from './rules/no-useless-key';
 import useEffectDepsPresence from './rules/use-effect-deps-presence';
 
 const rules = {
+  'no-useless-key': noUselessKey,
   'use-effect-deps-presence': useEffectDepsPresence,
 };
 
@@ -13,7 +15,7 @@ const recommendedConfig = {
     },
   },
   rules: {
-    // prettier-ignore
+    '@chanzuckerberg/edu-react/no-useless-key': 'error',
     '@chanzuckerberg/edu-react/use-effect-deps-presence': 'error',
     // TODO: Turn this rule on when it's released. It's not present in v6.6.1.
     'jsx-a11y/anchor-ambiguous-text': 'off',

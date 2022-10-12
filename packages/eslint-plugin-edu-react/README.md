@@ -35,4 +35,5 @@ The recommended config includes some custom rules (among others).
 
 | Name                     | Description                                                                             | Config      |
 | ------------------------ | --------------------------------------------------------------------------------------- | ----------- |
+| no-useless-key           | Don't allow unnecessary `key` attributes.                                               | recommended |
 | use-effect-deps-presence | Require deps arrays with `useEffect`. There are valid reasons to not have a deps array, in which case this rule can be suppressed or disabled. | recommended |

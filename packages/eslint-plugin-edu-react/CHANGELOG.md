@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [new] Add `no-useless-key` rule
+
 ## 1.0.1 (2022-10-12)
 
 - [fix] Disable react/prop-types
