@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.0.1 (2022-10-12)
+
 - [fix] Change arrow-parens config from "as-needed" to "always" to match Prettier config
 
 ## 1.0.0 (2022-10-11)
