@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.1.0 (2022-10-14)
+
 - [new] Add `no-useless-key` rule
 - [new] Add `no-create-ref-in-function-component` rule
 
