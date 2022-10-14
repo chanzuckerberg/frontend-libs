@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.1.1 (2022-10-14)
+
 - [fix] Add missing fixability to `no-useless-key` (missed this in 1.1.0)
 
 ## 1.1.0 (2022-10-14)
