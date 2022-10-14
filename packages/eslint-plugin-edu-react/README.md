@@ -33,6 +33,8 @@ Extend this package's config in your [ESLint configuration file](https: //eslint
 
 The recommended config includes some custom rules (among others).
 
-| Name                     | Description                                                                             | Config      |
-| ------------------------ | --------------------------------------------------------------------------------------- | ----------- |
-| use-effect-deps-presence | Require deps arrays with `useEffect`. There are valid reasons to not have a deps array, in which case this rule can be suppressed or disabled. | recommended |
+| Name                                | Description                                                                             | Config      |
+| ----------------------------------- | --------------------------------------------------------------------------------------- | ----------- |
+| no-create-ref-in-function-component | Don't allow `createRef` in function components, because `useRef` was probably intended. | recommended |
+| no-useless-key                      | Don't allow unnecessary `key` attributes.                                               | recommended |
+| use-effect-deps-presence            | Require deps arrays with `useEffect`. There are valid reasons to not have a deps array, in which case this rule can be suppressed or disabled. | recommended |
