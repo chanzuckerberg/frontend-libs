@@ -84,6 +84,16 @@ ruleTester.run('no-useless-key', rule, {
         {type: AST_NODE_TYPES.JSXAttribute, messageId: 'uselessKey'},
         {type: AST_NODE_TYPES.JSXAttribute, messageId: 'uselessKey'},
       ],
+      output: `
+        function A() {
+          return (
+            <ul>
+              <li >Thing 1</li>
+              <li >Thing 2</li>
+            </ul>
+          );
+        }
+      `,
     },
     {
       // Keys in a non-array
@@ -97,6 +107,15 @@ ruleTester.run('no-useless-key', rule, {
         }
       `,
       errors: [{type: AST_NODE_TYPES.JSXAttribute, messageId: 'uselessKey'}],
+      output: `
+        function A() {
+          return (
+            <div>
+              <span >Thing</span>
+            </div>
+          );
+        }
+      `,
     },
   ],
 });

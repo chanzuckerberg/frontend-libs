@@ -8,9 +8,10 @@ const failureMessages = {
 const rule: TSESLint.RuleModule<keyof typeof failureMessages> = {
   defaultOptions: [],
   meta: {
+    fixable: 'code',
     messages: failureMessages,
-    type: 'suggestion',
     schema: [],
+    type: 'suggestion',
   },
   create(context) {
     return {
@@ -26,7 +27,13 @@ const rule: TSESLint.RuleModule<keyof typeof failureMessages> = {
         // If the parent is another JSX element, as opposed to a return statement or an array or
         // something, we definitely don't need the `key` attribute.
         if (parent?.type === 'JSXElement') {
-          context.report({node, messageId: 'uselessKey'});
+          context.report({
+            node,
+            messageId: 'uselessKey',
+            fix(fixer) {
+              return fixer.remove(node);
+            },
+          });
         }
       },
     };
