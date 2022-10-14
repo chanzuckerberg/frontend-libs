@@ -1,7 +1,9 @@
+import noCreateRefInFunctionComponent from './rules/no-create-ref-in-function-component';
 import noUselessKey from './rules/no-useless-key';
 import useEffectDepsPresence from './rules/use-effect-deps-presence';
 
 const rules = {
+  'no-create-ref-in-function-component': noCreateRefInFunctionComponent,
   'no-useless-key': noUselessKey,
   'use-effect-deps-presence': useEffectDepsPresence,
 };
@@ -45,6 +47,31 @@ const recommendedConfig = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
   },
+  overrides: [
+    {
+      files: ['*.jsx', '*.tsx'],
+      rules: {
+        // Run no-create-ref-in-function-component only on .jsx or .tsx files to reduce the potential
+        // for false positives.
+        // prettier-ignore
+        '@chanzuckerberg/edu-react/no-create-ref-in-function-component': 'error',
+      },
+    },
+    {
+      files: [
+        '*.spec.[jt]s',
+        '*.spec.[jt]sx',
+        '*.test.[jt]s',
+        '*.test.[jt]sx',
+        '*__tests__/*',
+      ],
+      rules: {
+        // Turn off no-create-ref-in-function-component for tests, where it can be useful to create
+        // refs with createRef.
+        '@chanzuckerberg/edu-react/no-create-ref-in-function-component': 'off',
+      },
+    },
+  ],
 };
 
 module.exports = {
