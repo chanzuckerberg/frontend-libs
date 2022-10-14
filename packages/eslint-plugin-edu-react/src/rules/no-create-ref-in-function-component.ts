@@ -5,8 +5,8 @@ const failureMessage =
 
 const rule: Rule.RuleModule = {
   create(context) {
+    const suspiciousNodes: Rule.Node[] = [];
     let hasClassDeclaration = false;
-    let suspiciousNode: Rule.Node | null = null;
 
     return {
       ClassDeclaration() {
@@ -25,23 +25,22 @@ const rule: Rule.RuleModule = {
             node.callee.property.type === 'Identifier' &&
             node.callee.property.name === 'createRef')
         ) {
-          suspiciousNode = node;
+          suspiciousNodes.push(node);
         }
       },
 
       'Program:exit'() {
-        // If there is a `createRef` node but no class declarations, report a violation.
+        // If there are `createRef` nodes but no class declarations, report violations.
         //
         // In other words, assume that the `createRef` is legit if there are any classes present.
         // Presumably these classes are class components.
         //
-        // This strategy may have a lot of false negatives, but shouldn't have any false positives.
+        // This strategy may have some false negatives, but shouldn't have many false positives.
         // That's okay. The intent is to catch easy violations, not every possible one.
-        if (suspiciousNode && !hasClassDeclaration) {
-          context.report({
-            node: suspiciousNode,
-            message: failureMessage,
-          });
+        if (!hasClassDeclaration) {
+          suspiciousNodes.forEach((node) =>
+            context.report({node, message: failureMessage}),
+          );
         }
       },
     };

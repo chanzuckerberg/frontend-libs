@@ -77,5 +77,16 @@ ruleTester.run('no-create-ref-in-function-component', rule, {
       `,
       errors: [{type: 'CallExpression'}],
     },
+    {
+      // Multiple violations in a function component
+      code: `
+        function Foo() {
+          const ref1 = createRef();
+          const ref2 = createRef();
+          return null;
+        }
+      `,
+      errors: [{type: 'CallExpression'}, {type: 'CallExpression'}],
+    },
   ],
 });
