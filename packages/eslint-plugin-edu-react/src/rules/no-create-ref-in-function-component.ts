@@ -1,7 +1,7 @@
 import type {Rule} from 'eslint';
 
 const failureMessage =
-  'createRef should generally not be used in function components. Did you mean to use the "useRef" hook, instead?';
+  'createRef should generally not be used in function components. Did you mean to use the "useRef" hook instead?';
 
 const rule: Rule.RuleModule = {
   create(context) {
