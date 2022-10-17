@@ -66,6 +66,15 @@ ruleTester.run('no-useless-key', rule, {
         }
       `,
     },
+    {
+      // const without a key
+      code: `
+        function A() {
+          const foo = <span>hi</span>;
+          return foo;
+        }
+      `,
+    },
   ],
   invalid: [
     {
@@ -114,6 +123,22 @@ ruleTester.run('no-useless-key', rule, {
               <span >Thing</span>
             </div>
           );
+        }
+      `,
+    },
+    {
+      // const with a key
+      code: `
+        function A() {
+          const foo = <span key="bye">hi</span>;
+          return foo;
+        }
+      `,
+      errors: [{type: AST_NODE_TYPES.JSXAttribute, messageId: 'uselessKey'}],
+      output: `
+        function A() {
+          const foo = <span >hi</span>;
+          return foo;
         }
       `,
     },
