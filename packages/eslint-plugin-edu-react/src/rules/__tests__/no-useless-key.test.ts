@@ -85,10 +85,29 @@ ruleTester.run('no-useless-key', rule, {
         }
       `,
     },
+    {
+      // FALSE NEGATIVE - const with a key
+      code: `
+        function A() {
+          const foo = <span key="bye">hi</span>;
+          return foo;
+        }
+      `,
+    },
+    {
+      // FALSE NEGATIVE - Assignment with a key
+      code: `
+        function A() {
+          let foo;
+          foo = <span key="bye">hi</span>;
+          return foo;
+        }
+      `,
+    },
   ],
   invalid: [
     {
-      // Keys in a non-array
+      // Multiple keys in a non-array
       code: `
         function A() {
           return (
@@ -115,7 +134,7 @@ ruleTester.run('no-useless-key', rule, {
       `,
     },
     {
-      // Keys in a non-array
+      // One key in a non-array
       code: `
         function A() {
           return (
@@ -133,40 +152,6 @@ ruleTester.run('no-useless-key', rule, {
               <span >Thing</span>
             </div>
           );
-        }
-      `,
-    },
-    {
-      // const with a key
-      code: `
-        function A() {
-          const foo = <span key="bye">hi</span>;
-          return foo;
-        }
-      `,
-      errors: [{type: AST_NODE_TYPES.JSXAttribute, messageId: 'uselessKey'}],
-      output: `
-        function A() {
-          const foo = <span >hi</span>;
-          return foo;
-        }
-      `,
-    },
-    {
-      // Assignment with a key
-      code: `
-        function A() {
-          let foo;
-          foo = <span key="bye">hi</span>;
-          return foo;
-        }
-      `,
-      errors: [{type: AST_NODE_TYPES.JSXAttribute, messageId: 'uselessKey'}],
-      output: `
-        function A() {
-          let foo;
-          foo = <span >hi</span>;
-          return foo;
         }
       `,
     },
