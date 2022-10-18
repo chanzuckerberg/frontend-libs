@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Fix yet another `no-useless-key` false  negative
+
 ## 1.1.2 (2022-10-17)
 
 - [fix] Fix false negative in `no-useless-key`
