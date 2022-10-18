@@ -24,13 +24,15 @@ const rule: TSESLint.RuleModule<keyof typeof failureMessages> = {
         const entireJsxElement = openingJsxElement?.parent;
         const parent = entireJsxElement?.parent;
 
-        // If the parent is another JSX element or variable assignment, as opposed to an array or
-        // return statement, we don't need the `key` attribute.
-        if (
-          parent?.type === 'JSXElement' ||
-          parent?.type === 'VariableDeclarator' ||
-          parent?.type === 'AssignmentExpression'
-        ) {
+        // If the JSXElement is the direct child of another, it unambiguously does NOT need a key.
+        //
+        //   <div>
+        //     <div key="wat" /> // <- No key needed
+        //   </div>
+        //
+        // This only detects the above pattern because it's clear. There are other patterns where
+        // a key _probably_ aren't necessary, but we bail out of those.
+        if (parent?.type === 'JSXElement') {
           context.report({
             node,
             messageId: 'uselessKey',
