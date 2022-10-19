@@ -62,7 +62,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.6, @babel/core@npm:^7.12.10, @babel/core@npm:^7.12.3, @babel/core@npm:^7.19.3, @babel/core@npm:^7.7.5":
+"@babel/core@npm:^7.11.6, @babel/core@npm:^7.12.10, @babel/core@npm:^7.12.3, @babel/core@npm:^7.7.5":
   version: 7.19.3
   resolution: "@babel/core@npm:7.19.3"
   dependencies:
@@ -9606,11 +9606,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend-libs@workspace:."
   dependencies:
-    "@babel/core": ^7.19.3
     "@chanzuckerberg/eslint-config-edu-js": "workspace:*"
     "@chanzuckerberg/eslint-config-edu-ts": "workspace:*"
     "@chanzuckerberg/prettier-config-edu": "workspace:*"
-    "@octokit/core": ^4.1.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@types/eslint": ^8.4.6
