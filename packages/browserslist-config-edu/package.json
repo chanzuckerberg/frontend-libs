@@ -1,0 +1,20 @@
+{
+  "name": "@chanzuckerberg/browserslist-config-edu",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "browserslist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanzuckerberg/frontend-libs"
+  },
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/browserslist-config-edu",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ]
+}

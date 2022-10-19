@@ -1593,6 +1593,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chanzuckerberg/browserslist-config-edu@workspace:packages/browserslist-config-edu":
+  version: 0.0.0-use.local
+  resolution: "@chanzuckerberg/browserslist-config-edu@workspace:packages/browserslist-config-edu"
+  languageName: unknown
+  linkType: soft
+
 "@chanzuckerberg/eslint-config-edu-js@workspace:*, @chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js"
