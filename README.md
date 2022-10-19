@@ -33,6 +33,6 @@ All packages are published separately as NPM packages, and should be installed a
 
 All code and packages in this repository are licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-## Developing
+## Developing and Publishing
 
-If you want to work on this project or contribute back to it, see [our wiki entry on developing in it](https://github.com/chanzuckerberg/frontend-libs/wiki/Developing).
+If you want to work on this project or contribute back to it, see the wiki entries on [Developing](https://github.com/chanzuckerberg/frontend-libs/wiki/Developing) and [Publishing Releases](https://github.com/chanzuckerberg/frontend-libs/wiki/Publishing-releases).
