@@ -12,9 +12,9 @@ The packages in this monorepo are
 
 Using a monorepo eases the maintenance burden by sharing configuration and tooling across packages. Overall goals for this project are
 - Package are independent. Unrelated packages can live in this repository.
-- Packages are built, linted, and tested at the top level (instead of individually).
+- Packages are built, linted, and tested at the top level (instead of individually), to keep things simpler.
 - Packages can override config as necessary.
-- Scripts are straightforward and standard, so that upgrading dependencies is as easy as possible. Limit custom processes.
+- Scripts are straightforward and standard, so upgrading dependencies is as easy as possible. Limit custom processes.
 
 ## Usage
 
