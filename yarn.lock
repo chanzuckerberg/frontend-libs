@@ -1590,6 +1590,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chanzuckerberg/cra-template-edu@workspace:packages/cra-template-edu":
+  version: 0.0.0-use.local
+  resolution: "@chanzuckerberg/cra-template-edu@workspace:packages/cra-template-edu"
+  languageName: unknown
+  linkType: soft
+
 "@chanzuckerberg/eslint-config-edu-js@workspace:*, @chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-config-edu-js@workspace:packages/eslint-config-edu-js"

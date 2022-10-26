@@ -1,0 +1,21 @@
+{
+  "name": "@chanzuckerberg/cra-template-edu",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "create-react-app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanzuckerberg/frontend-libs"
+  },
+  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/cra-template-edu",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
