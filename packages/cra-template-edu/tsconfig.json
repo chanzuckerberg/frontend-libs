@@ -4,6 +4,6 @@
     // Unlike the other packages, we don't build this one's TypeScript. But we still need
     // TypeScript to analyze its .ts files.
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx"
   }
 }

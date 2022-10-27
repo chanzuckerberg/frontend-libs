@@ -18,13 +18,22 @@ yarn add --dev @chanzuckerberg/eslint-plugin-edu-react
 
 ## Usage
 
-Extend this package's config in your [ESLint configuration file](https://eslint.org/docs/latest/user-guide/configuring/configuration-files).
+Add this package as a plugin in your [eslint configuration file](https://eslint.org/docs/latest/user-guide/configuring/configuration-files).
+
+```jsonc
+// .eslintrc.json
+{
+  "plugins": ["@chanzuckerberg/edu-react"]
+}
+```
+
+Then extend the recommended config.
 
 ```js
 // .eslintrc
 {
   "extends": [
-    "plugin:@chanzuckerberg/eslint-plugin-edu-react/recommended"
+    "plugin:@chanzuckerberg/edu-react/recommended"
   ]
 }
 ```
