@@ -1,5 +1,5 @@
 import {createRoot} from 'react-dom/client';
-import App from './components/App';
+import App from './App';
 import '@chanzuckerberg/eds/lib/tokens/css/variables.css';
 import './index.css';
 

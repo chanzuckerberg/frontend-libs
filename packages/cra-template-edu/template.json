@@ -5,7 +5,9 @@
       "types": "tsc --noEmit"
     },
     "dependencies": {
-      "@chanzuckerberg/eds": "^5.3.1"
+      "@chanzuckerberg/eds": "^5.3.1",
+      "clsx": "^1.2.1",
+      "react-router-dom": "^6.4.2"
     },
     "devDependencies": {
       "@chanzuckerberg/eslint-config-edu-js": "^1.0.1",
