@@ -1,7 +1,10 @@
 {
   "package": {
     "scripts": {
+      "build-storybook": "build-storybook -s public",
       "lint": "eslint --ext=js,jsx,ts,tsx .",
+      "storybook": "start-storybook -p 6006 -s public",
+      "storybook:axe": "build-storybook -s public && axe-storybook",
       "types": "tsc --noEmit"
     },
     "dependencies": {
@@ -10,11 +13,18 @@
       "react-router-dom": "^6.4.2"
     },
     "devDependencies": {
+      "@chanzuckerberg/axe-storybook-testing": "^6.2.0",
       "@chanzuckerberg/eslint-config-edu-js": "^1.0.1",
       "@chanzuckerberg/eslint-config-edu-ts": "^1.0.0",
       "@chanzuckerberg/eslint-plugin-edu-react": "^1.1.4",
       "@chanzuckerberg/eslint-plugin-stories": "^3.2.3",
       "@chanzuckerberg/prettier-config-edu": "^1.0.0",
+      "@storybook/addon-essentials": "^6.5.13",
+      "@storybook/builder-webpack5": "^6.5.13",
+      "@storybook/manager-webpack5": "^6.5.13",
+      "@storybook/preset-create-react-app": "^4.1.2",
+      "@storybook/react": "^6.5.13",
+      "@storybook/testing-library": "^0.0.13",
       "@testing-library/jest-dom": "^5.14.1",
       "@testing-library/react": "^13.0.0",
       "@testing-library/user-event": "^13.2.1",
