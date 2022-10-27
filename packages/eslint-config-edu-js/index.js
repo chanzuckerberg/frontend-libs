@@ -13,6 +13,7 @@ module.exports = {
       {js: 'never', jsx: 'never', ts: 'never', tsx: 'never'},
     ],
     'import/first': 'error',
+    'import/no-anonymous-default-export': 'off',
     'import/no-extraneous-dependencies': 'error',
     'import/order': ['error', {alphabetize: {order: 'asc'}}],
     'no-alert': 'error',
