@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [maintenance] Updated dependencies
+
 ## 3.0.8 (2022-07-07)
 
 No updates. Adding new version so Lerna will publish a new release. After this, we shouldn't get any more versions that don't actually have any updates.
