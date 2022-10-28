@@ -1,6 +1,10 @@
 # App
 
-Bootstrapped with [Create React App](https://create-react-app.dev/) and the [Edu template](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/cra-template-edu).
+Bootstrapped from [Create React App](https://create-react-app.dev/) with the [Edu template](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/cra-template-edu).
+
+## Prerequisites
+
+- [nodenv](https://github.com/nodenv/nodenv)
 
 ## Usage
 
