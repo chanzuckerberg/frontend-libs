@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.0.2 (2022-10-28)
+
 - [fix] Turn off import/no-anonymous-default-export
 
 ## 1.0.1 (2022-10-12)
