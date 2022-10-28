@@ -8,6 +8,7 @@ Based on our [recommended frontend tech list](https://czi.atlassian.net/wiki/x/P
 - Linting and Prettier
 - Testing, Storybook, visual regression testing, and accessibility testing
 - Tailwind
+- react-query
 - and more!
 
 All for 3 easy payments of $79.99! Just kidding
