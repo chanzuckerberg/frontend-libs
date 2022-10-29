@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Standard story renders snapshot 1`] = `
+<p>
+  Current San Francisco temp: 
+  66.6
+</p>
+`;
