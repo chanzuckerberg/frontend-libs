@@ -1,10 +1,10 @@
 {
   "package": {
     "scripts": {
-      "build-storybook": "build-storybook -s public",
+      "build-storybook": "build-storybook",
       "lint": "eslint --ext=js,jsx,ts,tsx .",
-      "storybook": "start-storybook -p 6006 -s public",
-      "storybook:axe": "build-storybook -s public && axe-storybook",
+      "storybook": "start-storybook -p 6006",
+      "storybook:axe": "build-storybook && axe-storybook",
       "types": "tsc --noEmit"
     },
     "dependencies": {
