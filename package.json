@@ -9,6 +9,7 @@
     "all": "yarn build && yarn check-ts-references && yarn lint && yarn test:only",
     "build": "scripts/build.sh",
     "build:ts": "tsc --build",
+    "changed": "lerna changed",
     "check-ts-references": "yarn run --silent update-ts-references --check || (echo 'Project references seem to be out of date. Run \"yarn update-ts-references\" and then \"yarn lint:fix\".' && exit 1)",
     "clean": "rimraf 'packages/*/build' '**/*.tsbuildinfo'",
     "lint": "eslint --ext=js,jsx,ts,tsx,json .",
