@@ -5,6 +5,7 @@
 ## 1.1.5 (2022-10-28)
 
 - [maintenance] Updated dependencies
+- [maintenance] Update installation documentation
 
 ## 1.1.4 (2022-10-18)
 

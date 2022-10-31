@@ -1,0 +1,54 @@
+{
+  "package": {
+    "scripts": {
+      "build-storybook": "build-storybook",
+      "lint": "eslint --ext=js,jsx,ts,tsx .",
+      "storybook": "start-storybook -p 6006",
+      "storybook:axe": "build-storybook && axe-storybook",
+      "types": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@chanzuckerberg/eds": "^5.3.1",
+      "@tanstack/react-query": "^4.13.0",
+      "clsx": "^1.2.1",
+      "react-router-dom": "^6.4.2"
+    },
+    "devDependencies": {
+      "@chanzuckerberg/axe-storybook-testing": "^6.2.0",
+      "@chanzuckerberg/eslint-config-edu-js": "^1.0.2",
+      "@chanzuckerberg/eslint-config-edu-ts": "^1.0.1",
+      "@chanzuckerberg/eslint-plugin-edu-react": "^1.1.5",
+      "@chanzuckerberg/eslint-plugin-stories": "^3.2.4",
+      "@chanzuckerberg/prettier-config-edu": "^1.0.0",
+      "@chanzuckerberg/story-utils": "^3.0.9",
+      "@storybook/addon-essentials": "^6.5.13",
+      "@storybook/builder-webpack5": "^6.5.13",
+      "@storybook/manager-webpack5": "^6.5.13",
+      "@storybook/preset-create-react-app": "^4.1.2",
+      "@storybook/react": "^6.5.13",
+      "@storybook/testing-library": "^0.0.13",
+      "@storybook/testing-react": "^1.3.0",
+      "@testing-library/jest-dom": "^5.14.1",
+      "@testing-library/react": "^13.0.0",
+      "@testing-library/user-event": "^14.4.3",
+      "@types/jest": "^27.0.1",
+      "@types/node": "^16.7.13",
+      "@types/react": "^18.0.0",
+      "@types/react-dom": "^18.0.0",
+      "autoprefixer": "^10.4.12",
+      "eslint": "^8.26.0",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-prettier": "^4.2.1",
+      "msw": "^0.47.4",
+      "msw-storybook-addon": "^1.6.3",
+      "postcss": "^8.4.18",
+      "prettier": "2.7.1",
+      "tailwindcss": "^3.2.1",
+      "typescript": "^4.4.2"
+    },
+    "eslintConfig": {},
+    "msw": {
+      "workerDirectory": "public"
+    }
+  }
+}

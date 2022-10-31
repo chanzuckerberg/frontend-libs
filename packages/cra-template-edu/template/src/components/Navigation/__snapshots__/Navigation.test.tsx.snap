@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About story renders snapshot 1`] = `
+<nav
+  class="px-5 pt-5"
+>
+  <a
+    class="p-1 text-blue-600 hover:underline"
+    href="/"
+  >
+    Home
+  </a>
+  <a
+    class="p-1 text-blue-600 hover:underline font-bold italic"
+    href="/about"
+  >
+    About
+  </a>
+</nav>
+`;
+
+exports[`Home story renders snapshot 1`] = `
+<nav
+  class="px-5 pt-5"
+>
+  <a
+    class="p-1 text-blue-600 hover:underline font-bold italic"
+    href="/"
+  >
+    Home
+  </a>
+  <a
+    class="p-1 text-blue-600 hover:underline"
+    href="/about"
+  >
+    About
+  </a>
+</nav>
+`;
