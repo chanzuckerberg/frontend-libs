@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Use an async function in example API call
+
 ## 1.0.2 (2022-11-01)
 
 - [fix] Fix component name (the About component's function was named App...)
