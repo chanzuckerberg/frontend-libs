@@ -19,7 +19,7 @@
     "template.json"
   ],
   "devDependencies": {
-    "@chanzuckerberg/eds": "^5.3.1",
+    "@chanzuckerberg/eds": "^6.0.0",
     "@chanzuckerberg/prettier-config-edu": "workspace:*",
     "@chanzuckerberg/story-utils": "workspace:*",
     "@storybook/testing-library": "^0.0.13",
