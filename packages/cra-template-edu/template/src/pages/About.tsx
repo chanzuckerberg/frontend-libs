@@ -1,7 +1,7 @@
 import {Heading} from '@chanzuckerberg/eds';
 import Navigation from '../components/Navigation';
 
-export default function App() {
+export default function About() {
   return (
     <>
       <Navigation />
