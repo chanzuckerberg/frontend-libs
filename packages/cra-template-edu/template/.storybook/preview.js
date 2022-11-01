@@ -1,6 +1,7 @@
 import {initialize as initializeMSW, mswDecorator} from 'msw-storybook-addon';
 import '../src/index.css';
 
+// Setup Mock Service Worker, for mocking network requests.
 initializeMSW();
 
 export const decorators = [mswDecorator];
