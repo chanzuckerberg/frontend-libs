@@ -4,6 +4,7 @@ import {render, screen} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import * as stories from './Navigation.stories';
 
+// Use our stories as the "units" of the unit tests.
 const {Home} = composeStories(stories);
 
 generateSnapshots(stories);

@@ -8,6 +8,9 @@ const queryClient = new QueryClient();
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      {/* Use react-router for client-side routing - https://reactrouter.com/en/main. Here we
+      define our top-level routes. Subcomponents can container their own routes to achieve nested
+      routes. */}
       <BrowserRouter>
         <Routes>
           <Route element={<Root />} path="/" />

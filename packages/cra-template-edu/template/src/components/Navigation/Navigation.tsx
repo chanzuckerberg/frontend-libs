@@ -5,7 +5,9 @@ const baseLinkClasses = 'p-1 text-blue-600 hover:underline';
 const currentLinkClasses = 'font-bold italic';
 
 export default function Navigation() {
+  // Get the current location so we can tell which route we're on.
   const location = useLocation();
+
   return (
     <nav className="px-5 pt-5">
       <Link

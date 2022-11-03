@@ -3,6 +3,7 @@
 ## Unreleased
 
 - [fix] Use an async function in example API call
+- [fix] Add inline comments to explain routing, data fetching, testing, etc.
 
 ## 1.0.2 (2022-11-01)
 
