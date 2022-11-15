@@ -23,3 +23,15 @@ jobs:
         run: npm run storybook:axe
       - name: Build 🚧
         run: npm run build
+
+      # # To use Chromatic for [visual regression testing](https://czi.atlassian.net/wiki/x/SYCFiw):
+      # # 1. Un-comment this entire block.
+      # # 2. Create a new project in Chromatic per https://www.chromatic.com/docs/setup#sign-up.
+      # # 3. Add its unique project token to GitHub as a `CHROMATIC_PROJECT_TOKEN` secret.
+      # - name: Publish to Chromatic
+      #   uses: chromaui/action@v1
+      #   with:
+      #     autoAcceptChanges: main
+      #     exitOnceUploaded: true
+      #     projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+      #     onlyChanged: true

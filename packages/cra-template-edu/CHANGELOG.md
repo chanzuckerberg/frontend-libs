@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [new] Add example block for Chromatic to the Github Action workflow
+
 ## 1.0.3 (2022-11-03)
 
 - [fix] Use an async function in example API call
