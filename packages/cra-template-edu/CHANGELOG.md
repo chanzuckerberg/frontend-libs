@@ -3,6 +3,9 @@
 ## Unreleased
 
 - [new] Add example block for Chromatic to the Github Action workflow
+- [fix] Update depenendencies
+- [fix] Ensure TypeScript in generated apps is limited to v4.8.x, to work with msw (which for some reason has a tight dependency... see https://github.com/mswjs/msw/issues/1462)
+- [fix] Limit msw version to the one we created `mockServiceWorker.js` with
 
 ## 1.0.3 (2022-11-03)
 
