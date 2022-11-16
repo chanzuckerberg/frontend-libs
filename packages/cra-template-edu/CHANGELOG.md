@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.1.0 (2022-11-15)
+
 - [new] Add example block for Chromatic to the Github Action workflow
 - [fix] Update depenendencies
 - [fix] Ensure TypeScript in generated apps is limited to v4.8.x, to work with msw (which for some reason has a tight dependency... see https://github.com/mswjs/msw/issues/1462)

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.0.2 (2022-11-15)
+
 - [maintenance] Updated dependencies
 
 ## 1.0.1 (2022-10-28)
