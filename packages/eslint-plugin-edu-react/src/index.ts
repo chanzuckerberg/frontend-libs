@@ -21,6 +21,8 @@ const recommendedConfig = {
     '@chanzuckerberg/edu-react/use-effect-deps-presence': 'error',
     // TODO: Turn this rule on when it's released. It's not present in v6.6.1.
     'jsx-a11y/anchor-ambiguous-text': 'off',
+    // Autofocus has its uses, and may be better than manually sending focus to an input field.
+    'jsx-a11y/no-autofocus': 'off',
     // Enforce files with JSX are named wither .jsx or .tsx. This makes it easier for us to do
     // analysis on codebases (since we can find React components by looking at file extensions).
     'react/jsx-filename-extension': [
