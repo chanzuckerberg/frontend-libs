@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Remove unnecessary eslint-config-prettier extending (eslint-plugin-prettier already extends it)
+
 ## 1.1.0 (2022-11-15)
 
 - [new] Add example block for Chromatic to the Github Action workflow

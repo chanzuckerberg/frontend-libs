@@ -15,7 +15,6 @@ module.exports = {
     'plugin:@chanzuckerberg/eslint-plugin-edu-react/recommended',
     'plugin:@chanzuckerberg/eslint-plugin-stories/recommended',
     'plugin:prettier/recommended',
-    'prettier',
   ],
   ignorePatterns: ['storybook-static/', 'build/'],
 };
