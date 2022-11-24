@@ -1594,7 +1594,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/cra-template-edu@workspace:packages/cra-template-edu"
   dependencies:
-    "@chanzuckerberg/eds": ^6.0.1
+    "@chanzuckerberg/eds": ^7.0.0
     "@chanzuckerberg/prettier-config-edu": "workspace:*"
     "@chanzuckerberg/story-utils": "workspace:*"
     "@storybook/testing-library": ^0.0.13
@@ -1611,9 +1611,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@chanzuckerberg/eds@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "@chanzuckerberg/eds@npm:6.0.1"
+"@chanzuckerberg/eds@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@chanzuckerberg/eds@npm:7.0.0"
   dependencies:
     "@headlessui/react": ^1.6.6
     "@popperjs/core": ^2.11.6
@@ -1629,7 +1629,7 @@ __metadata:
     svg4everybody: ^2.1.9
   peerDependencies:
     react: ">= 16.8.0"
-  checksum: be4c5b2530fdf22cd817d01ab7ee3ce18657017e7299d49ccaf1c975f5b3ccca8e261207dddebaa72c976547c9b874ac8f885f4cff7c0b48ccb6f2a93baef8c4
+  checksum: 2b002f2bb453803b9a1207b7382b7697f932a952a7ec56e152fdce4981188d76622cdc1ab7a03741a81cbda0a063118ab7f7220856bcf2e75a6585bb21ec71d9
   languageName: node
   linkType: hard
 
