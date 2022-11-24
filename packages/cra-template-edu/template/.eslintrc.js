@@ -17,4 +17,10 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   ignorePatterns: ['storybook-static/', 'build/'],
+  overrides: [
+    {
+      files: ['src/**/*.{spec,test}.{js,jsx,ts,tsx}'],
+      extends: ['plugin:testing-library/react'],
+    },
+  ],
 };
