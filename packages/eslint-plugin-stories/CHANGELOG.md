@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.2.6 (2022-11-24)
+
 - [fix] Update dependencies
 
 ## 3.2.5 (2022-11-15)
