@@ -3,6 +3,7 @@
 ## Unreleased
 
 - [fix] Turn off jsx-a11y/no-autofocus
+- [fix] Update dependencies
 
 ## 1.1.6 (2022-10-31)
 

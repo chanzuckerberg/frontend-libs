@@ -5,6 +5,7 @@
 - [fix] Remove unnecessary eslint-config-prettier extending (eslint-plugin-prettier already extends it)
 - [fix] Specify prettier config in package.json field, instead of separate prettier.config.js file
 - [fix] Upgrade EDS from v6 to v7
+- [fix] Upgrade prettier from 2.7.1 to 2.8.0
 
 ## 1.1.0 (2022-11-15)
 
