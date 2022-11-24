@@ -3,6 +3,7 @@
 ## Unreleased
 
 - [fix] Remove unnecessary eslint-config-prettier extending (eslint-plugin-prettier already extends it)
+- [fix] Specify prettier config in package.json field, instead of separate prettier.config.js file
 
 ## 1.1.0 (2022-11-15)
 

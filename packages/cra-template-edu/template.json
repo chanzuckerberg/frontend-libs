@@ -47,6 +47,7 @@
       "typescript": "~4.8.4"
     },
     "eslintConfig": {},
+    "prettier": "@chanzuckerberg/prettier-config-edu",
     "msw": {
       "workerDirectory": "public"
     }
