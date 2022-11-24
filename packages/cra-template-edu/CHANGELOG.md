@@ -4,7 +4,8 @@
 
 - [fix] Remove unnecessary eslint-config-prettier extending (eslint-plugin-prettier already extends it)
 - [fix] Specify prettier config in package.json field, instead of separate prettier.config.js file
-- [fix] Upgrade EDS from v6 to v7
+- [fix] Upgrade EDS from 6.0.1 to 7.0.0
+- [fix] Upgrade msw to 0.49 and typescript to 4.9.3
 - [fix] Upgrade prettier from 2.7.1 to 2.8.0
 - [new] Add eslint-plugin-testing-library
 
