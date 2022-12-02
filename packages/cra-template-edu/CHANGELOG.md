@@ -3,6 +3,7 @@
 ## Unreleased
 
 - [fix] Use Node 18.12.1 by default
+- [fix] Cancel previous CI runs
 
 ## 1.2.0 (2022-11-24)
 

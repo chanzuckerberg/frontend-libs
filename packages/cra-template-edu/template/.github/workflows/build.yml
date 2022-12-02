@@ -4,6 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Cancel Previous Runs ⛔
+        uses: styfle/cancel-workflow-action@0.11.0
       - name: Checkout 🛍️
         uses: actions/checkout@v3
       - name: Setup Node 😻
