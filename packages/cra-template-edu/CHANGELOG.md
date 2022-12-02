@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Use Node 18.12.1 by default
+
 ## 1.2.0 (2022-11-24)
 
 - [fix] Remove unnecessary eslint-config-prettier extending (eslint-plugin-prettier already extends it)
