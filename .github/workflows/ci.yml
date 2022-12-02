@@ -4,8 +4,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Cancel Previous Runs ⛔
+        uses: styfle/cancel-workflow-action@0.11.0
       - name: Checkout
         uses: actions/checkout@master
+      - name: Setup Node 😻
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.node-version'
+          cache: 'yarn'
       - name: Install
         run: yarn install
       - name: Build
