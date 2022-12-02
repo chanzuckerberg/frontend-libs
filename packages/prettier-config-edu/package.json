@@ -19,7 +19,7 @@
     "index.js"
   ],
   "dependencies": {
-    "prettier-plugin-tailwindcss": "^0.1.13"
+    "prettier-plugin-tailwindcss": "^0.2.0"
   },
   "peerDependencies": {
     "prettier": ">= 2"
