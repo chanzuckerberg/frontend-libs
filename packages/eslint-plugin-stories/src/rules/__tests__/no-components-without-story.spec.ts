@@ -31,10 +31,16 @@ ruleTester.run('no-components-without-story', rule, {
       filename: 'foo.tsx',
     },
     {
-      name: 'a tsx file with exports',
+      name: 'a tsx file with exports with tsx story file',
       code: 'export default {}',
       filename:
-        'packages/eslint-plugin-stories/src/rules/__tests__/noComponentsWithoutStoryTestComponent.tsx',
+        'packages/eslint-plugin-stories/src/rules/__tests__/noComponentsWithoutStoryTestComponentTSX.tsx',
+    },
+    {
+      name: 'a tsx file with exports with ts story file',
+      code: 'export default {}',
+      filename:
+        'packages/eslint-plugin-stories/src/rules/__tests__/noComponentsWithoutStoryTestComponentTS.tsx',
     },
   ],
   invalid: [
