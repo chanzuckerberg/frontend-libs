@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 3.2.9 (2022-12-13)
+
+- [fix] Correct changelog
+
+## 3.2.8 (2022-12-13)
+
 - [fix] Allow TS story files in `no-components-without-story` rule [#41](https://github.com/chanzuckerberg/frontend-libs/pull/41)
 
 ## 3.2.7 (2022-12-02)
