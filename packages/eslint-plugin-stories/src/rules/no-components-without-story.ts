@@ -29,8 +29,13 @@ const rule: Rule.RuleModule = {
           return;
         }
 
-        const storyFilename = `${filename.split('.')[0]}.stories.tsx`;
-        const correspondingStoryExists = fs.existsSync(storyFilename);
+        const storyFilenames = [
+          `${filename.split('.')[0]}.stories.tsx`,
+          `${filename.split('.')[0]}.stories.ts`,
+        ];
+        const correspondingStoryExists = storyFilenames.some((filename) =>
+          fs.existsSync(filename),
+        );
 
         if (!correspondingStoryExists) {
           context.report({
