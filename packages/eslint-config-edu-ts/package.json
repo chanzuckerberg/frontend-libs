@@ -20,9 +20,9 @@
     "index.js"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.45.0",
-    "@typescript-eslint/parser": "^5.45.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.26.0"
   },
   "peerDependencies": {
