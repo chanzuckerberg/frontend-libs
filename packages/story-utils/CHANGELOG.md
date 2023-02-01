@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Update dependencies
+
 ## 3.0.11 (2023-01-11)
 
 - [fix] Update dependencies
