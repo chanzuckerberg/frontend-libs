@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.1.9 (2023-02-01)
+
 - [fix] Update dependencies
 
 ## 1.1.8 (2023-01-11)
