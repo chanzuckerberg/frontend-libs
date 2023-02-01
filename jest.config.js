@@ -26,6 +26,8 @@ module.exports = {
     // Skip the "tests" generated as part of cra-template-edu. They're not intended to run as part
     // of this repo's test suite, and would require much more setup to work here.
     '<rootDir>/packages/cra-template-edu/template/',
+    // There shouldn't be any, but ignore any tests that sneak into build directories.
+    '<rootDir>/packages/.+/build/',
   ],
 
   transform: {
