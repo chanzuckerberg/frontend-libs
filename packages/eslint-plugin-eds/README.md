@@ -41,8 +41,20 @@ Then extend the recommended config.
 
 ## Custom rules
 
-The recommended config includes some custom rules that are enabled as part of the recommended config.
-
 ### no-h-tags
 
+Don't allow `<h1>` - `<h6>` tags in components in favor of EDS `<Heading>` component.
+
+```jsx
+<h1>Bad Heading</h1> // <- Violation
+<Heading size="h1">EDS Heading</Heading> // <- Good
+```
+
 ### no-p-tags
+
+Don't allow `<p>` tags in components in favor of EDS `<Text>` component.
+
+```jsx
+<p>Bad block text</p> // <- Violation
+<Text>EDS Text</Text> // <- Good
+```
