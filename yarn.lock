@@ -1651,6 +1651,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@chanzuckerberg/eslint-plugin-eds@workspace:packages/eslint-plugin-eds":
+  version: 0.0.0-use.local
+  resolution: "@chanzuckerberg/eslint-plugin-eds@workspace:packages/eslint-plugin-eds"
+  peerDependencies:
+    eslint: ">= 8"
+  languageName: unknown
+  linkType: soft
+
 "@chanzuckerberg/eslint-plugin-edu-react@workspace:packages/eslint-plugin-edu-react":
   version: 0.0.0-use.local
   resolution: "@chanzuckerberg/eslint-plugin-edu-react@workspace:packages/eslint-plugin-edu-react"

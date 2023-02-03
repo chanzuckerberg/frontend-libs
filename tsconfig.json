@@ -12,6 +12,9 @@
     },
     {
       "path": "packages/story-utils"
+    },
+    {
+      "path": "packages/eslint-plugin-eds"
     }
   ]
 }
