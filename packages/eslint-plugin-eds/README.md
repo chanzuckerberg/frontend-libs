@@ -1,6 +1,6 @@
 # @chanzuckerberg/eslint-plugin-eds
 
-Shared React [ESLint](https://eslint.org/) plugin and config for CZI's Education initiative.
+Shared React [ESLint](https://eslint.org/) plugin and config for CZI's Education Design System.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Add this package as a plugin in your [eslint configuration file](https://eslint.
 ```jsonc
 // .eslintrc.json
 {
-  "plugins": ["@chanzuckerberg/edu-react"]
+  "plugins": ["@chanzuckerberg/eds"]
 }
 ```
 

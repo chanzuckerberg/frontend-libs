@@ -6,6 +6,15 @@ const rules = {
   'no-p-tags': noPTags,
 };
 
+const recommended = {
+  plugins: ['@chanzuckerberg/eds'],
+  rules: {
+    '@chanzuckerberg/eds/no-h-tags': 'warn',
+    '@chanzuckerberg/eds/no-p-tags': 'warn',
+  },
+};
+
 module.exports = {
   rules,
+  recommended,
 };
