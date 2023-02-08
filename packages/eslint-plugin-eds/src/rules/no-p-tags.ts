@@ -6,6 +6,7 @@ const failureMessage =
 const rule: Rule.RuleModule = {
   create(context) {
     return {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       JSXElement(node: any) {
         if (node.openingElement.name.name === 'p') {
           context.report({
