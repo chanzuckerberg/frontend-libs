@@ -5,6 +5,9 @@
       "path": "packages/cra-template-edu"
     },
     {
+      "path": "packages/eslint-plugin-eds"
+    },
+    {
       "path": "packages/eslint-plugin-edu-react"
     },
     {
