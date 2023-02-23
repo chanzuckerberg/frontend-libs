@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+# 1.0.1 (2023-02-23)
+
 - [fix]Properly format eslint rule config structure
 
 # 1.0.0 (2023-02-23)
