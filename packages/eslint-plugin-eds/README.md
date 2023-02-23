@@ -34,7 +34,7 @@ Then extend the recommended config.
 // .eslintrc
 {
   "extends": [
-    "plugin:@chanzuckerberg/eslint-plugin-eds"
+    "plugin:@chanzuckerberg/eslint-plugin-eds/recommended"
   ]
 }
 ```

@@ -16,5 +16,7 @@ const recommended = {
 
 module.exports = {
   rules,
-  recommended,
+  configs: {
+    recommended,
+  },
 };
