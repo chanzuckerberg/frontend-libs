@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.2.4 (2023-03-03)
+
 - [fix] Downgrade MSW to resolve peer dep issue with msw-storybook-addon - https://github.com/mswjs/msw-storybook-addon/issues/99
 - [fix] Update dependencies
 
