@@ -15,6 +15,7 @@ const hTags = {
 const rule: Rule.RuleModule = {
   create(context) {
     return {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       JSXElement(node: any) {
         const name = node.openingElement.name.name;
 
