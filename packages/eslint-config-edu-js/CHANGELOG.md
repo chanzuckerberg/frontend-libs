@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [new] Turn on the [require-await](https://eslint.org/docs/latest/rules/require-await) rule, preventing `async` functions that have no `await`
+
 ## 1.0.3 (2023-02-01)
 
 - [fix] Update dependencies
