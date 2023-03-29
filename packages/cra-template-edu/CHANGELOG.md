@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 1.2.5 (2023-03-29)
+
+- [fix] Use Node 18.15.0 for local dev in generated apps
+
 ## 1.2.4 (2023-03-03)
 
 - [fix] Downgrade MSW to resolve peer dep issue with msw-storybook-addon - https://github.com/mswjs/msw-storybook-addon/issues/99
