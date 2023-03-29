@@ -26,5 +26,6 @@ module.exports = {
     'prefer-arrow-callback': 'error',
     quotes: ['error', 'single', {avoidEscape: true}],
     radix: 'error',
+    'require-await': 'error',
   },
 };
