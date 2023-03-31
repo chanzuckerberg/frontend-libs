@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Update EDS to v11
+
 ## 1.2.5 (2023-03-29)
 
 - [fix] Use Node 18.15.0 for local dev in generated apps
