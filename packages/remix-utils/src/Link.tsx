@@ -1,4 +1,4 @@
-import {ClickableStyle} from '@chanzuckerberg/eds';
+import ClickableStyle from '@chanzuckerberg/eds/lib/components/ClickableStyle';
 import type {ClickableStyleProps} from '@chanzuckerberg/eds/lib/components/ClickableStyle';
 import {Link as RemixLink} from '@remix-run/react';
 
