@@ -2,20 +2,9 @@
  * @jest-environment jsdom
  */
 
-import {unstable_createRemixStub as createRemixStub} from '@remix-run/testing';
 import {render, screen} from '@testing-library/react';
-import type {ReactNode} from 'react';
 import Link from './Link';
-
-function RemixStub(props: {children: ReactNode}) {
-  const RemixedStub = createRemixStub([
-    {
-      path: '/',
-      element: props.children,
-    },
-  ]);
-  return <RemixedStub />;
-}
+import {RemixStub} from './createRemixStub';
 
 it('is an anchor', () => {
   render(

@@ -4,9 +4,9 @@
 
 import {installGlobals} from '@remix-run/node';
 import {Link, Outlet} from '@remix-run/react';
-import {unstable_createRemixStub as createRemixStub} from '@remix-run/testing';
 import {render, screen} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import {createRemixStub} from './createRemixStub';
 import usePageChange from './usePageChange';
 
 // Ensures globals such as "fetch", "Response", "Request", and "Headers" are present. These are
