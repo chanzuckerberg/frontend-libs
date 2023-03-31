@@ -2,9 +2,6 @@
   "files": [],
   "references": [
     {
-      "path": "packages/cra-template-edu"
-    },
-    {
       "path": "packages/eslint-plugin-eds"
     },
     {
