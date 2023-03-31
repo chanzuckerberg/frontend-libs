@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "allowJs": false,
+    // Let ts-jest transform the EDS .js files. Can probably remove this once
+    // https://github.com/chanzuckerberg/edu-design-system/pull/1572 lands.
+    "allowJs": true,
     "composite": true,
     "declaration": true,
     "declarationMap": true,

@@ -7,6 +7,10 @@ module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
 
+  moduleNameMapper: {
+    '\\.css$': 'identity-obj-proxy',
+  },
+
   // Pre-process TypeScript files with ts-jest.
   preset: 'ts-jest',
 
@@ -39,7 +43,7 @@ module.exports = {
   ],
 
   transform: {
-    '^.+\\.tsx?$': [
+    '^.+\\.(js|jsx|ts|tsx|mjs)$': [
       'ts-jest',
       {
         // Workaround for https://github.com/kulshekhar/ts-jest/issues/1648.
@@ -47,4 +51,9 @@ module.exports = {
       },
     ],
   },
+
+  transformIgnorePatterns: [
+    // Transform EDS... at least until https://github.com/chanzuckerberg/edu-design-system/pull/1572 lands.
+    '/node_modules/(?!(@chanzuckerberg/eds))',
+  ],
 };

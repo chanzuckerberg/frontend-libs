@@ -12,4 +12,5 @@ npm install --save-dev @chanzuckerberg/remix-utils
 
 ## Utilities
 
+- `Link` - Link (AKA anchor) component combining the Remix navigation and the EDS styles.
 - `usePageChange` - execute a callback after a navigation happens.
