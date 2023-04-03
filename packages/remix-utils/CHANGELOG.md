@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.0.1 (2023-04-03)
+
 - [fix] Update dependencies
 - [fix] Change React peer dep to v18
 

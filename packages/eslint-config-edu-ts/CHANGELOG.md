@@ -2,7 +2,11 @@
 
 ## Unreleased
 
-## 1.0.8 (@023-03-31)
+## 1.0.9 (2023-04-03)
+
+- [fix] Update dependencies
+
+## 1.0.8 (2023-03-31)
 
 - [fix] Update dependencies
 
