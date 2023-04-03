@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [fix] Update dependencies
+
 ## 3.2.13 (2023-03-31)
 
 - [fix] Update dependencies
