@@ -1,7 +1,7 @@
 {
   "name": "@chanzuckerberg/remix-utils",
   "sideEffects": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/remix-utils",
   "repository": {
