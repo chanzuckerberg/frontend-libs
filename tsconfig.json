@@ -14,6 +14,9 @@
       "path": "packages/remix-utils"
     },
     {
+      "path": "packages/remix-utils/tsconfig.buildesm.json"
+    },
+    {
       "path": "packages/story-utils"
     }
   ]

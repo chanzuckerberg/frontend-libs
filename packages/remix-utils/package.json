@@ -11,7 +11,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "build/index.js",
+  "exports": {
+    ".": {
+      "import": "./build/esm/index.js",
+      "require": "./build/cjs/index.js"
+    }
+  },
+  "main": "build/cjs/index.js",
   "files": [
     "build"
   ],
