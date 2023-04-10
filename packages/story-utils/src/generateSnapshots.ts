@@ -1,5 +1,9 @@
-import {composeStories, type composeStory} from '@storybook/testing-react';
-import type {StoryFile} from '@storybook/testing-react/dist/types';
+import {
+  composeStories,
+  type composeStory,
+  type ReactRenderer,
+} from '@storybook/react';
+import type {Store_CSFExports} from '@storybook/types';
 import {render, type RenderResult} from '@testing-library/react';
 import {createElement} from 'react';
 import wait from './wait';
@@ -12,6 +16,8 @@ type TestOptions = {
     wrapper: RenderResult,
   ) => Promise<ChildNode | null> | ChildNode | null;
 };
+
+type StoryFile = Store_CSFExports<ReactRenderer>;
 
 /**
  * composeStories uses composeStory. There's no explicit type exported that we can use while

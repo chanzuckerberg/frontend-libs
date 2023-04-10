@@ -2,6 +2,10 @@
 
 Utilities for using [Storybook stories](https://storybook.js.org/docs/react/get-started/whats-a-story) in non-Storybook environments. For example, using stories in Jest tests.
 
+## Requirements
+
+- Storybook 7 (if you're using Storybook 6, use story-utils@v3)
+
 ## Installation
 
 Install @chanzuckerberg/story-utils with your favorite package manager. With yarn, that would look like
