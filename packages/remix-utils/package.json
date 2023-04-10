@@ -15,17 +15,16 @@
   "files": [
     "build"
   ],
-  "dependencies": {
-    "@remix-run/testing": "^1.15.0"
-  },
   "peerDependencies": {
     "@chanzuckerberg/eds": ">=11.0.0",
     "@remix-run/react": ">=1.0.0",
+    "@remix-run/testing": ">=1.0.0",
     "react": ">=18.0.0"
   },
   "devDependencies": {
     "@chanzuckerberg/eds": "^11.1.0",
     "@remix-run/node": "^1.15.0",
-    "@remix-run/react": "^1.15.0"
+    "@remix-run/react": "^1.15.0",
+    "@remix-run/testing": "^1.15.0"
   }
 }

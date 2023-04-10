@@ -525,6 +525,7 @@ __metadata:
   peerDependencies:
     "@chanzuckerberg/eds": ">=11.0.0"
     "@remix-run/react": ">=1.0.0"
+    "@remix-run/testing": ">=1.0.0"
     react: ">=18.0.0"
   languageName: unknown
   linkType: soft
