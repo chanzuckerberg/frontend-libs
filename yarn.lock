@@ -534,8 +534,9 @@ __metadata:
   resolution: "@chanzuckerberg/story-utils@workspace:packages/story-utils"
   dependencies:
     "@storybook/react": ^7.0.2
-    "@storybook/testing-react": ^2.0.0
+    "@storybook/types": ^7.0.2
   peerDependencies:
+    "@storybook/react": ^7.0.0
     "@testing-library/react": ">=11.0.0"
     react: "*"
   languageName: unknown
@@ -2163,22 +2164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/testing-react@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@storybook/testing-react@npm:2.0.0"
-  dependencies:
-    "@storybook/csf": ^0.1.0
-  peerDependencies:
-    "@storybook/client-logger": ^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0
-    "@storybook/preview-api": ^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0
-    "@storybook/react": ^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0
-    "@storybook/types": ^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 7d8130dca4b305c34d1694ca451b15b3c3a97b865fa84081383dc576b014d39248e5744f3081897900aa88fafd94ad5da16016c79ece811f8def76c499784baf
-  languageName: node
-  linkType: hard
-
-"@storybook/types@npm:7.0.2":
+"@storybook/types@npm:7.0.2, @storybook/types@npm:^7.0.2":
   version: 7.0.2
   resolution: "@storybook/types@npm:7.0.2"
   dependencies:

@@ -23,13 +23,12 @@
     "build"
   ],
   "peerDependencies": {
+    "@storybook/react": "^7.0.0",
     "@testing-library/react": ">=11.0.0",
     "react": "*"
   },
-  "dependencies": {
-    "@storybook/testing-react": "^2.0.0"
-  },
   "devDependencies": {
-    "@storybook/react": "^7.0.2"
+    "@storybook/react": "^7.0.2",
+    "@storybook/types": "^7.0.2"
   }
 }
