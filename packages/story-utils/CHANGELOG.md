@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.0.14 (2023-04-10)
+
 - [fix] Downgrade @storybook/testing-react back to 1.3.0. v2 only works with Storybook 7, which should've been a breaking change.
 
 ## 3.0.13 (2023-04-03)
