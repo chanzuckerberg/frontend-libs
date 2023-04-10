@@ -3,7 +3,8 @@
 ## Unreleased
 
 ## 1.0.2 (2023-04-04)
-- [refactor] Import ClickableStyle from eds index
+
+- [fix] Import ClickableStyle from eds index
 
 ## 1.0.1 (2023-04-03)
 
