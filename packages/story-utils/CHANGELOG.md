@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 4.0.0 (2023-04-10)
+
 - [breaking] Support Storybook 7 (and drop Storybook 6 support)
 
 ## 3.0.14 (2023-04-10)
