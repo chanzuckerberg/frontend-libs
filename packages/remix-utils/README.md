@@ -12,6 +12,5 @@ npm install --save-dev @chanzuckerberg/remix-utils
 
 ## Utilities
 
-- `Link` - Link (AKA anchor) component combining the Remix navigation and the EDS styles.
 - `createRemixStub` and `<RemixStub>` - helpers for writing tests and Storybook stories for Remix routes and components.
 - `usePageChange` - execute a callback after a navigation happens.
