@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.0.0 (2023-04-10)
+
 - [breaking] Remove `<Link>` component - [#52](https://github.com/chanzuckerberg/frontend-libs/pull/52)
 
 ## 1.0.2 (2023-04-04)
