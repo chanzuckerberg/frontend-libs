@@ -13,7 +13,7 @@ Shared JS [ESLint](https://eslint.org/) config for CZI's Education initiative.
 Install by running
 
 ```sh
-yarn add --dev @chanzuckerberg/eslint-config-edu-js
+npm install --save-dev @chanzuckerberg/eslint-config-edu-js
 ```
 
 ## Usage

@@ -8,10 +8,10 @@ Utilities for using [Storybook stories](https://storybook.js.org/docs/react/get-
 
 ## Installation
 
-Install @chanzuckerberg/story-utils with your favorite package manager. With yarn, that would look like
+Install @chanzuckerberg/story-utils with your favorite package manager.
 
 ```sh
-yarn add --dev @chanzuckerberg/story-utils
+npm install --save-dev @chanzuckerberg/story-utils
 ```
 
 ## Utilities

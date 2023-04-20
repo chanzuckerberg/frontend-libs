@@ -12,14 +12,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
-          cache: 'yarn'
-      - name: Install
-        run: yarn install --immutable
+      - name: Download deps 📥
+        uses: bahmutov/npm-install@v1
       - name: Build
-        run: yarn build
+        run: npm run build
       - name: Ensure project references are up to date
-        run: yarn check-ts-references
+        run: npm run check-ts-references
       - name: Lint
-        run: yarn lint
+        run: npm run lint
       - name: Unit tests
-        run: yarn test:only
+        run: npm run test:only

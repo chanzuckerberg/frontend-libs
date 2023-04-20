@@ -14,7 +14,7 @@ Shared [Prettier](https://prettier.io) config for CZI's Education initiative.
 Install by running
 
 ```sh
-yarn add --dev @chanzuckerberg/prettier-config-edu
+npm install --save-dev @chanzuckerberg/prettier-config-edu
 ```
 
 ## Usage

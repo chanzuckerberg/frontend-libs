@@ -13,7 +13,7 @@ Shared TypeScript [ESLint](https://eslint.org/) config for CZI's Education initi
 Install by running
 
 ```sh
-yarn add --dev @chanzuckerberg/eslint-config-edu-ts
+npm install --save-dev @chanzuckerberg/eslint-config-edu-ts
 ```
 
 ## Usage
