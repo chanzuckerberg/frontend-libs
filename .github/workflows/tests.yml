@@ -1,24 +1,31 @@
 name: Tests
-on: [push, pull_request]
+on: [push, pull_request, workflow_call]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel Previous Runs ⛔
+      - name: Cancel previous runs
         uses: styfle/cancel-workflow-action@0.11.0
+
       - name: Checkout
         uses: actions/checkout@master
-      - name: Setup Node 😻
+
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
-      - name: Download deps 📥
+
+      - name: Install deps
         uses: bahmutov/npm-install@v1
+
       - name: Build
         run: npm run build
+
       - name: Ensure project references are up to date
         run: npm run check-ts-references
+
       - name: Lint
         run: npm run lint
+
       - name: Unit tests
         run: npm run test:only
