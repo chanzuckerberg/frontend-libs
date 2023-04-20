@@ -6,19 +6,19 @@
     "packages/*"
   ],
   "scripts": {
-    "all": "yarn build && yarn check-ts-references && yarn lint && yarn test:only",
     "build": "scripts/build.sh",
     "build:ts": "tsc --build",
     "changed": "lerna changed",
     "check-ts-references": "yarn run --silent update-ts-references --check || (echo 'Project references seem to be out of date. Run \"yarn update-ts-references\" and then \"yarn lint:fix\".' && exit 1)",
-    "clean": "rimraf 'packages/*/build' '**/*.tsbuildinfo'",
+    "clean": "rimraf --glob 'packages/*/build' '**/*.tsbuildinfo'",
     "lint": "eslint --ext=js,jsx,ts,tsx,json .",
     "lint:fix": "yarn run lint --fix",
     "prepack": "yarn build",
     "publish-packages": "yarn clean && lerna publish",
     "test": "yarn build && yarn test:only",
     "test:only": "jest",
-    "update-ts-references": "update-ts-references"
+    "update-ts-references": "update-ts-references",
+    "validate": "yarn build && yarn check-ts-references && yarn lint && yarn test:only"
   },
   "devDependencies": {
     "@chanzuckerberg/eslint-config-edu-js": "workspace:*",
@@ -46,9 +46,9 @@
     "prettier": "^2.8.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^5.0.0",
     "ts-jest": "^29.1.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.0.4",
     "update-ts-references": "^2.6.1"
   },
   "packageManager": "yarn@3.5.0"
