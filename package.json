@@ -6,7 +6,6 @@
     "packages/*"
   ],
   "scripts": {
-    "all": "yarn build && yarn check-ts-references && yarn lint && yarn test:only",
     "build": "scripts/build.sh",
     "build:ts": "tsc --build",
     "changed": "lerna changed",
@@ -18,7 +17,8 @@
     "publish-packages": "yarn clean && lerna publish",
     "test": "yarn build && yarn test:only",
     "test:only": "jest",
-    "update-ts-references": "update-ts-references"
+    "update-ts-references": "update-ts-references",
+    "validate": "yarn build && yarn check-ts-references && yarn lint && yarn test:only"
   },
   "devDependencies": {
     "@chanzuckerberg/eslint-config-edu-js": "workspace:*",
