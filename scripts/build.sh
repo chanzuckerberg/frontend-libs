@@ -6,7 +6,7 @@
 #
 # If we find a good way to do that, we should be able to remove this script with a simple build
 # command.
-yarn build:ts
+npm run build:ts
 
 # Remove test files and their declarations.
 npx rimraf \
