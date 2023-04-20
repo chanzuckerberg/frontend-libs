@@ -6,10 +6,10 @@ In particular, these rules ensure that stories can be used in non-Storybook cont
 
 ## Installation
 
-Install @chanzuckerberg/eslint-plugin-stories with your favorite package manager. With yarn, that would look like
+Install @chanzuckerberg/eslint-plugin-stories with your favorite package manager.
 
 ```sh
-yarn add --dev @chanzuckerberg/eslint-plugin-stories
+npm install --save-dev @chanzuckerberg/eslint-plugin-stories
 ```
 
 ## Usage

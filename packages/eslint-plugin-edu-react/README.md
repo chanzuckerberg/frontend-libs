@@ -13,7 +13,7 @@ Shared React [ESLint](https://eslint.org/) plugin and config for CZI's Education
 Install by running
 
 ```sh
-yarn add --dev @chanzuckerberg/eslint-plugin-edu-react
+npm install --save-dev @chanzuckerberg/eslint-plugin-edu-react
 ```
 
 ## Usage
