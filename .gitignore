@@ -53,15 +53,5 @@ storybook-static
 # Packed npm
 *.tgz
 
-# Non-Yarn lockfiles
-package-lock.json
-
-# Yarn 2 files
-# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
+# Non-NPM lockfiles
+yarn.lock
