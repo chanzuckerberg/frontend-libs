@@ -1,7 +1,6 @@
 {
   "name": "@chanzuckerberg/story-utils",
   "version": "4.0.0",
-  "license": "MIT",
   "keywords": [
     "stories",
     "storybook",
@@ -9,9 +8,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chanzuckerberg/frontend-libs"
+    "url": "https://github.com/chanzuckerberg/edu-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/story-utils",
+  "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/story-utils",
   "publishConfig": {
     "access": "public"
   },

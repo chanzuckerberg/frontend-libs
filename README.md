@@ -1,8 +1,8 @@
-# frontend-libs
+# edu-libs
 
-![Tests](https://github.com/chanzuckerberg/frontend-libs/workflows/Tests/badge.svg)
+![Tests](https://github.com/chanzuckerberg/edu-libs/workflows/Tests/badge.svg)
 
-Monorepo of frontend, TypeScript projects for use by the [Chan Zuckerberg Initiative](https://github.com/chanzuckerberg).
+Monorepo, TypeScript projects for use by the [Chan Zuckerberg Initiative](https://github.com/chanzuckerberg).
 
 ## Project goals
 
@@ -22,18 +22,14 @@ All packages are published separately as NPM packages, and should be installed a
 
 ## Packages
 
-- [eslint-config-edu-js](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/eslint-config-edu-js)
-- [eslint-config-edu-react](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/eslint-config-edu-react)
-- [eslint-config-edu-ts](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/eslint-config-edu-ts)
-- [eslint-plugin-stories](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/eslint-plugin-stories)
-- [prettier-config-edu](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/prettier-config-edu)
-- [remix-utils](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/remix-utils)
-- [story-utils](https://github.com/chanzuckerberg/frontend-libs/tree/main/packages/story-utils)
-
-## License
-
-All code and packages in this repository are licensed under the [MIT License](https://opensource.org/licenses/MIT).
+- [eslint-config-edu-js](https://github.com/chanzuckerberg/edu-libs/tree/main/packages/eslint-config-edu-js)
+- [eslint-config-edu-react](https://github.com/chanzuckerberg/edu-libs/tree/main/packages/eslint-config-edu-react)
+- [eslint-config-edu-ts](https://github.com/chanzuckerberg/edu-libs/tree/main/packages/eslint-config-edu-ts)
+- [eslint-plugin-stories](https://github.com/chanzuckerberg/edu-libs/tree/main/packages/eslint-plugin-stories)
+- [prettier-config-edu](https://github.com/chanzuckerberg/edu-libs/tree/main/packages/prettier-config-edu)
+- [remix-utils](https://github.com/chanzuckerberg/edu-libs/tree/main/packages/remix-utils)
+- [story-utils](https://github.com/chanzuckerberg/edu-libs/tree/main/packages/story-utils)
 
 ## Developing and Publishing
 
-If you want to work on this project or contribute back to it, see the wiki entries on [Developing](https://github.com/chanzuckerberg/frontend-libs/wiki/Developing) and [Publishing Releases](https://github.com/chanzuckerberg/frontend-libs/wiki/Publishing-releases).
+If you want to work on this project or contribute back to it, see the wiki entries on [Developing](https://github.com/chanzuckerberg/edu-libs/wiki/Developing) and [Publishing Releases](https://github.com/chanzuckerberg/edu-libs/wiki/Publishing-releases).

@@ -1,7 +1,6 @@
 {
   "name": "@chanzuckerberg/eslint-plugin-edu-react",
   "version": "1.1.9",
-  "license": "MIT",
   "keywords": [
     "eslint",
     "eslint-plugin",
@@ -9,9 +8,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chanzuckerberg/frontend-libs"
+    "url": "https://github.com/chanzuckerberg/edu-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-plugin-edu-react",
+  "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/eslint-plugin-edu-react",
   "publishConfig": {
     "access": "public"
   },

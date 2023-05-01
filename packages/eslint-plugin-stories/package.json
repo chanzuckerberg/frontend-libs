@@ -1,7 +1,6 @@
 {
   "name": "@chanzuckerberg/eslint-plugin-stories",
   "version": "3.2.14",
-  "license": "MIT",
   "keywords": [
     "eslint",
     "eslint-plugin",
@@ -10,9 +9,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chanzuckerberg/frontend-libs"
+    "url": "https://github.com/chanzuckerberg/edu-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-plugin-stories",
+  "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/eslint-plugin-stories",
   "publishConfig": {
     "access": "public"
   },

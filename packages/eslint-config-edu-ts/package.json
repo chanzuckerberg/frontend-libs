@@ -1,7 +1,6 @@
 {
   "name": "@chanzuckerberg/eslint-config-edu-ts",
   "version": "1.0.9",
-  "license": "MIT",
   "keywords": [
     "eslint",
     "eslint-config",
@@ -9,9 +8,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chanzuckerberg/frontend-libs"
+    "url": "https://github.com/chanzuckerberg/edu-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-config-edu-ts",
+  "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/eslint-config-edu-ts",
   "publishConfig": {
     "access": "public"
   },

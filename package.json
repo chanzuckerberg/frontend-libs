@@ -1,7 +1,6 @@
 {
-  "name": "frontend-libs",
+  "name": "edu-libs",
   "private": true,
-  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
