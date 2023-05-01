@@ -17,6 +17,10 @@
   "files": [
     "build"
   ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf ./build ./tsconfig.tsbuildinfo"
+  },
   "peerDependencies": {
     "eslint": ">= 8"
   }

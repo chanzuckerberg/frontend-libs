@@ -22,6 +22,10 @@
   "files": [
     "build"
   ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf ./build ./tsconfig.tsbuildinfo"
+  },
   "devDependencies": {
     "@typescript-eslint/experimental-utils": "^5.57.1"
   }

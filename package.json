@@ -5,8 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "scripts/build.sh",
-    "build:ts": "tsc --build",
+    "build": "lerna run build",
     "changed": "lerna changed",
     "check-ts-references": "npm run --silent update-ts-references --check || (echo 'Project references seem to be out of date. Run \"npm run update-ts-references\" and then \"npm run lint -- --fix\".' && exit 1)",
     "clean": "rimraf --glob 'packages/*/build' '**/*.tsbuildinfo'",
