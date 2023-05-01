@@ -11,7 +11,7 @@
   },
   "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/eslint-plugin-eds",
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
   "main": "build/index.js",
   "files": [
