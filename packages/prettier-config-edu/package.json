@@ -1,18 +1,17 @@
 {
   "name": "@chanzuckerberg/prettier-config-edu",
   "version": "1.0.5",
-  "license": "MIT",
   "keywords": [
     "prettier",
     "prettier-config"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chanzuckerberg/frontend-libs"
+    "url": "https://github.com/chanzuckerberg/edu-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/prettier-config-edu",
+  "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/prettier-config-edu",
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
   "main": "index.js",
   "files": [

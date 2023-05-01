@@ -2,19 +2,22 @@
   "name": "@chanzuckerberg/remix-utils",
   "sideEffects": false,
   "version": "2.0.0",
-  "license": "MIT",
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/remix-utils",
+  "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/remix-utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chanzuckerberg/frontend-libs"
+    "url": "https://github.com/chanzuckerberg/edu-libs"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
   "main": "build/index.js",
   "files": [
     "build"
   ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf ./build ./tsconfig.tsbuildinfo"
+  },
   "peerDependencies": {
     "@remix-run/testing": "1.x || 2.x",
     "react": "16.x || 17.x || 18.x"

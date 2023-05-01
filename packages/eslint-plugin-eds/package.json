@@ -1,23 +1,26 @@
 {
   "name": "@chanzuckerberg/eslint-plugin-eds",
   "version": "1.0.2",
-  "license": "MIT",
   "keywords": [
     "eslint",
     "eslint-plugin"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chanzuckerberg/frontend-libs"
+    "url": "https://github.com/chanzuckerberg/edu-libs"
   },
-  "homepage": "https://github.com/chanzuckerberg/frontend-libs/blob/main/packages/eslint-plugin-eds",
+  "homepage": "https://github.com/chanzuckerberg/edu-libs/blob/main/packages/eslint-plugin-eds",
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
   "main": "build/index.js",
   "files": [
     "build"
   ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf ./build ./tsconfig.tsbuildinfo"
+  },
   "peerDependencies": {
     "eslint": ">= 8"
   }
