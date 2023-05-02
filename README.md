@@ -1,4 +1,6 @@
-# frontend-libs
+# [DEPRECATED] frontend-libs
+
+** DEPRECATED ** this repository is no longer used to publish packages. Reference https://github.com/chanzuckerberg/edu-libs instead
 
 ![Tests](https://github.com/chanzuckerberg/frontend-libs/workflows/Tests/badge.svg)
 
